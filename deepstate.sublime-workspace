@@ -1,0 +1,3341 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"term",
+				"terminal_state"
+			],
+			[
+				"valid",
+				"validity"
+			],
+			[
+				"initi",
+				"initial_state"
+			],
+			[
+				"defi",
+				"definition"
+			],
+			[
+				"conte",
+				"context"
+			],
+			[
+				"contex",
+				"context_hash"
+			],
+			[
+				"an",
+				"answered"
+			],
+			[
+				"cur",
+				"current_shift"
+			],
+			[
+				"call",
+				"call_attempts"
+			],
+			[
+				"wake",
+				"wake_someone"
+			],
+			[
+				"in",
+				"incident"
+			],
+			[
+				"Fi",
+				"FinishWaitingWorker"
+			],
+			[
+				"wait",
+				"wait_time"
+			],
+			[
+				"curr",
+				"current_company"
+			],
+			[
+				"logo",
+				"logo_image"
+			],
+			[
+				"auth",
+				"auth_hash"
+			],
+			[
+				"until",
+				"until_time"
+			],
+			[
+				"slack",
+				"slack_channel_id"
+			],
+			[
+				"tea",
+				"team_params"
+			],
+			[
+				"defa",
+				"default_slack_channel"
+			],
+			[
+				"input",
+				"input_received"
+			],
+			[
+				"attempt",
+				"attempted_at"
+			],
+			[
+				"un",
+				"unanswered"
+			],
+			[
+				"tra",
+				"transitions_to"
+			],
+			[
+				"fail",
+				"failed"
+			],
+			[
+				"ack",
+				"acknowledged"
+			],
+			[
+				"att",
+				"attempted"
+			],
+			[
+				"token",
+				"token_expires_at"
+			],
+			[
+				"dumm",
+				"dummy_price"
+			],
+			[
+				"expires",
+				"expires_at"
+			],
+			[
+				"fetch",
+				"fetch_access_token"
+			],
+			[
+				"acce",
+				"access_token_request"
+			],
+			[
+				"access",
+				"access_token"
+			],
+			[
+				"payp",
+				"paypal_credentials"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"merchan",
+				"merchantIdInPayPal"
+			],
+			[
+				"return",
+				"return_url"
+			],
+			[
+				"account",
+				"account_status"
+			],
+			[
+				"permissio",
+				"permissions_granted"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"req",
+				"requested_capabilities"
+			],
+			[
+				"pa",
+				"payment_country"
+			],
+			[
+				"stripe",
+				"stripe_ids_present"
+			],
+			[
+				"with",
+				"with_stripe_plans"
+			],
+			[
+				"ann",
+				"annual_stripe_plan_id"
+			],
+			[
+				"month",
+				"monthly_stripe_plan_id"
+			],
+			[
+				"plan",
+				"plan_id"
+			],
+			[
+				"decorate",
+				"decorated_course"
+			],
+			[
+				"market",
+				"marketing_consent"
+			],
+			[
+				"redire",
+				"redirect_path"
+			],
+			[
+				"sales",
+				"sales_page_path"
+			],
+			[
+				"current_",
+				"current_state"
+			],
+			[
+				"html",
+				"html_safe"
+			],
+			[
+				"update_",
+				"update_event_actor_metadata"
+			],
+			[
+				"fo",
+				"forgotten"
+			],
+			[
+				"visot",
+				"visitor_ids"
+			],
+			[
+				"vistor",
+				"visitor_ids"
+			],
+			[
+				"affil",
+				"affiliate_email_address"
+			],
+			[
+				"affili",
+				"affiliate_code"
+			],
+			[
+				"stripe_custom",
+				"stripe_customer_ids"
+			],
+			[
+				"dripp",
+				"dripped_courses"
+			],
+			[
+				"site",
+				"site_ids"
+			],
+			[
+				"user",
+				"user_ids"
+			],
+			[
+				"item",
+				"item_class"
+			],
+			[
+				"draft",
+				"draft_page"
+			],
+			[
+				"produ",
+				"product_settings"
+			],
+			[
+				"displ",
+				"display_page"
+			],
+			[
+				"dis",
+				"display_membership"
+			],
+			[
+				"depre",
+				"deprecate"
+			],
+			[
+				"pro",
+				"product_slug"
+			],
+			[
+				"upda",
+				"update_paths"
+			],
+			[
+				"ip_",
+				"ip_spoof_error"
+			],
+			[
+				"gener",
+				"generate_initial_path_slug"
+			],
+			[
+				"current",
+				"current_path"
+			],
+			[
+				"arch",
+				"archived"
+			],
+			[
+				"oth",
+				"other_course_path"
+			],
+			[
+				"be_",
+				"be_present"
+			],
+			[
+				"create",
+				"created_item"
+			],
+			[
+				"payment",
+				"payment_country"
+			],
+			[
+				"tax_",
+				"tax_params"
+			],
+			[
+				"veri",
+				"verified_tax_info"
+			],
+			[
+				"pay",
+				"paypal_token"
+			],
+			[
+				"curre",
+				"current_user"
+			],
+			[
+				"validate",
+				"validate_vat_id"
+			],
+			[
+				"cahc",
+				"cache_key"
+			],
+			[
+				"param",
+				"param_key"
+			],
+			[
+				"vat_",
+				"vat_layer_criteria"
+			],
+			[
+				"vat",
+				"vat_layer_criteria"
+			],
+			[
+				"json",
+				"json_response"
+			],
+			[
+				"http",
+				"http_client"
+			],
+			[
+				"rate",
+				"rate_fetched_at"
+			],
+			[
+				"total",
+				"total_price_with_tax"
+			],
+			[
+				"dummy",
+				"dummy_tax"
+			],
+			[
+				"parn",
+				"parent_store"
+			],
+			[
+				"parent",
+				"parent_store"
+			],
+			[
+				"verific",
+				"verified_country"
+			],
+			[
+				"payme",
+				"payment_country"
+			],
+			[
+				"annual",
+				"annual_price"
+			],
+			[
+				"checkout",
+				"checkout_details"
+			],
+			[
+				"check",
+				"checkout_details"
+			],
+			[
+				"verifi",
+				"verified_country"
+			],
+			[
+				"ver",
+				"verified_country"
+			],
+			[
+				"empty",
+				"empty_store"
+			],
+			[
+				"custom",
+				"custom_domain"
+			],
+			[
+				"discou",
+				"discount_cents"
+			],
+			[
+				"tax",
+				"tax_amount"
+			],
+			[
+				"regular",
+				"regular_price"
+			],
+			[
+				"app",
+				"applied_price_cents"
+			],
+			[
+				"country",
+				"country_counts"
+			],
+			[
+				"fetc",
+				"fetch_attribute"
+			],
+			[
+				"verif",
+				"verified"
+			],
+			[
+				"select",
+				"selected_country"
+			],
+			[
+				"sect",
+				"selected_country"
+			],
+			[
+				"sele",
+				"selected_country"
+			],
+			[
+				"cou",
+				"country_counts"
+			],
+			[
+				"st",
+				"student"
+			],
+			[
+				"convert_kit",
+				"convert_kit_api_key"
+			],
+			[
+				"con",
+				"constraints"
+			],
+			[
+				"remove",
+				"remove_ssl_cert"
+			],
+			[
+				"add_",
+				"add_dns_records"
+			],
+			[
+				"update",
+				"update_heroku_env_vars"
+			],
+			[
+				"key",
+				"key_text"
+			],
+			[
+				"cert",
+				"cert_text"
+			],
+			[
+				"review",
+				"review_domains"
+			],
+			[
+				"pk",
+				"PKCS12"
+			],
+			[
+				"cer",
+				"cert_id"
+			],
+			[
+				"Cert",
+				"CertAuthority"
+			],
+			[
+				"sort",
+				"sorted_params"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/jamie/projects/statelychart/lib/deep_state/module.rb",
+			"settings":
+			{
+				"buffer_size": 846,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "# Runtime state. Is this needed? I don't think so\nclass State\n  attr_reader :type, :states\n\n  def initialize type, context\n    @context = OpenStruct.new context\n    @type = type\n    @states = []\n  end\n\n  def initial?\n  end\n\n  def terminal?\n  end\n\n  def nested?\n  end\nend\n",
+			"file": "/Users/jamie/projects/statelychart/lib/deep_state/state.rb",
+			"file_size": 271,
+			"file_write_time": 132000138884361015,
+			"settings":
+			{
+				"buffer_size": 271,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jamie/projects/statelychart/lib/deep_state/state_chart.rb",
+			"settings":
+			{
+				"buffer_size": 479,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jamie/projects/statelychart/lib/deep_state.rb",
+			"settings":
+			{
+				"buffer_size": 164,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jamie/projects/statelychart/lib/deep_state/hook.rb",
+			"settings":
+			{
+				"buffer_size": 298,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jamie/projects/statelychart/lib/deep_state/state_definition.rb",
+			"settings":
+			{
+				"buffer_size": 1884,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "# IncidentStateMachine.build incident: incident\nclass IncidentStateMachine\n  include DeepState\n\n  on_enter do\n    incident.state = state\n    incident.save!\n  end\n\n  # The incident has been created\n  initial :open do\n    on_enter do\n      # notify slack\n    end\n\n    event :start => :waking, if: ->{ incident.wake_immediately? }\n    event :start => :waiting, unless: ->{ incident.wake_immediately? }\n\n    state :waiting do\n      event :wake => :waking, after: -> { incident.wait_time }\n    end\n\n    state :waking do\n      context :user\n\n      initial :phoning do\n        context :call\n\n        on_enter do\n          # Actually attempt calling them\n          results = MakeItRing.call user: context.user\n          context.call = results.call\n        end\n\n        after 1.minute do\n          fail! if state.phoning?\n        end\n\n        event :retry => :phoning do\n          on_event do\n            # Text the user if this is the first failed call attempt\n            return unless history[:retry].none?\n\n            SendTextMessage.call call: call\n          end\n        end\n\n        event :fail => :failed\n        event :answer => :answered\n        event :fail => :cancelled\n      end\n\n      state :waiting do\n        event :phone => :phoning, after: -> { call.delay }\n      end\n\n      state :failed do\n        on_enter do\n          if context.call.can_be_retried?\n            retry!\n          else\n            # If possible, call the next contact\n            next_user = roster.next(after: call.user)\n            if next_user\n              context.user = next_user\n              retry!\n            else\n              cancel!\n            end\n          end\n        end\n\n        event :cancel => :cancelled\n        event :retry => :phoning\n      end\n\n      state :cancelled\n\n      state :answered do\n        on_entry do\n          assign!\n        end\n      end\n    end\n\n    event :assign => :assigned\n\n    event :alert => nil do # => nil means don't change the state\n      # Update Slack with a message\n      # Send an SMS to the current too\n    end\n  end\n\n  state :assigned do\n    on_entry do\n      incident.assign context.user\n    end\n\n    # Receive an update\n    event :alert => nil do\n      # Update Slack with a message\n    end\n\n    event :close => :closed\n  end\n\n  terminal :closed\nend\n",
+			"file": "/Users/jamie/projects/statelychart/lib/deep_state/example.rb",
+			"file_size": 2287,
+			"file_write_time": 131997489949625261,
+			"settings":
+			{
+				"buffer_size": 2287,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jamie/projects/statelychart/deepstate.gemspec",
+			"settings":
+			{
+				"buffer_size": 1859,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"moe",
+				"Snippet: module .. end"
+			],
+			[
+				"mo",
+				"File: Move"
+			],
+			[
+				"extr",
+				"Extract: Move selection to file ..."
+			],
+			[
+				"syn",
+				"Set Syntax: Ruby"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"yaml",
+				"Pretty YAML: Reformat (Pretty Print) YAML"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ex",
+				"Extract: Move selection to file ..."
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"foryaml",
+				"Pretty YAML: Reformat (Pretty Print) YAML"
+			],
+			[
+				"gitbl",
+				"git: blame current file"
+			],
+			[
+				"synyam",
+				"Set Syntax: YAML"
+			],
+			[
+				"revea",
+				"File: Reveal"
+			],
+			[
+				"rubo",
+				"RuboCop: Auto correct current file"
+			],
+			[
+				"chan",
+				"ChangeQuotes"
+			],
+			[
+				"blam",
+				"git: blame current file"
+			],
+			[
+				"extra",
+				"Extract: Move selection to file ..."
+			],
+			[
+				"ch",
+				"ChangeQuotes"
+			],
+			[
+				"ru",
+				"RuboCop: Auto correct current file"
+			],
+			[
+				"reve",
+				"File: Reveal"
+			],
+			[
+				"side",
+				"Focus File on Sidebar"
+			],
+			[
+				"vali",
+				"Pretty JSON: Validate"
+			],
+			[
+				"copy",
+				"File: Copy Path From Project"
+			],
+			[
+				"synelm",
+				"Set Syntax: Elm"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"rspec:",
+				"TestRSpec: Test Current File"
+			],
+			[
+				"cha",
+				"ChangeQuotes"
+			],
+			[
+				"cop",
+				"File: Copy Path From Project"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"gitblam",
+				"git: blame current file"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"rbo",
+				"RuboCop: Auto correct current file"
+			],
+			[
+				"Guard",
+				"github: add fork as remote"
+			],
+			[
+				"log",
+				"Git: Quick Log Current File"
+			],
+			[
+				"rub",
+				"RuboCop: Auto correct current file"
+			],
+			[
+				"blame",
+				"GitHubinator Blame on Master"
+			],
+			[
+				"mov",
+				"File: Move"
+			],
+			[
+				"va",
+				"Pretty JSON: Validate"
+			],
+			[
+				"val",
+				"Pretty JSON: Validate"
+			],
+			[
+				"f",
+				"Focus File on Sidebar"
+			],
+			[
+				"foc",
+				"Focus File on Sidebar"
+			],
+			[
+				"c",
+				"ChangeQuotes"
+			],
+			[
+				"sy",
+				"Set Syntax: Ruby"
+			],
+			[
+				"sideb",
+				"Focus File on Sidebar"
+			],
+			[
+				"duplic",
+				"File: Duplicate"
+			],
+			[
+				"al",
+				"AlignTab"
+			],
+			[
+				"align",
+				"AlignTab"
+			],
+			[
+				"gist",
+				"Gist: Add File to Gist"
+			],
+			[
+				"bla",
+				"git: blame current file"
+			],
+			[
+				"git",
+				"Git: Blame"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"test",
+				"TestRSpec: Test Current Line"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"rev",
+				"File: Reveal"
+			],
+			[
+				"re",
+				"File: Rename"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"te",
+				"TestRSpec: Test Current File"
+			],
+			[
+				"clea",
+				"Bookmarks: Clear All"
+			],
+			[
+				"testrspec",
+				"TestRSpec: Test Current File"
+			],
+			[
+				"form",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"new",
+				"File: New Folder Relative to Project Root"
+			],
+			[
+				"change",
+				"ChangeQuotes"
+			],
+			[
+				"bl",
+				"git: blame current file"
+			],
+			[
+				"focu",
+				"Focus File on Sidebar"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"sysql",
+				"Set Syntax: SQL"
+			],
+			[
+				"syrub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"syruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"synmarkdown",
+				"Set Syntax: Markdown GFM"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"forma",
+				"Pretty Ruby: Format"
+			],
+			[
+				"gitb",
+				"git: blame current file"
+			],
+			[
+				"json",
+				"Pretty JSON: Validate"
+			],
+			[
+				"gitlog",
+				"Git: Quick Log Current File"
+			],
+			[
+				"gitlo",
+				"git: log current file"
+			],
+			[
+				"git lo",
+				"git: log current file"
+			],
+			[
+				"git ",
+				"Git: Blame"
+			],
+			[
+				"git log",
+				"Git: Quick Log Current File"
+			],
+			[
+				"gitl",
+				"Git: Log"
+			],
+			[
+				"quote",
+				"ChangeQuotes"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"tog",
+				"RuboCop: Toggle auto check"
+			],
+			[
+				"toggl",
+				"RuboCop: Toggle auto check"
+			],
+			[
+				"check",
+				"RuboCop: Check current file"
+			],
+			[
+				"swit",
+				"TestRSpec: Switch between code and test"
+			],
+			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"renm",
+				"File: Rename"
+			],
+			[
+				"syntaxruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"syntaruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packup",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"valid",
+				"Pretty JSON: Validate"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"DUPL",
+				"File: Duplicate"
+			],
+			[
+				"git d",
+				"Git: Diff Current File"
+			],
+			[
+				"oweer",
+				"Git-flow: Feature Start"
+			],
+			[
+				"convercas",
+				"Convert Case: Lower Case"
+			],
+			[
+				"case",
+				"Convert Case: Lower Case"
+			],
+			[
+				"extrac",
+				"Extract: Move selection to file ..."
+			],
+			[
+				"pretty ",
+				"Pretty Ruby: Format"
+			],
+			[
+				"gitres",
+				"git: reset"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ma",
+				"Marked"
+			],
+			[
+				"mar",
+				"Marked"
+			],
+			[
+				"comp",
+				"git: compare current file against ..."
+			],
+			[
+				"d",
+				"File: Duplicate"
+			],
+			[
+				"duplica",
+				"File: Duplicate"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"chn",
+				"Git: Checkout New Branch"
+			],
+			[
+				"sidebar",
+				"Focus File on Sidebar"
+			],
+			[
+				"git blam",
+				"Git: Blame"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"git bl",
+				"git: blame current file"
+			],
+			[
+				"sideba",
+				"Focus File on Sidebar"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			]
+		],
+		"width": 656.0
+	},
+	"console":
+	{
+		"height": 124.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jamie/projects/statelychart",
+		"/Users/jamie/projects/statelychart/lib",
+		"/Users/jamie/projects/statelychart/lib/deep_state",
+		"/Users/jamie/projects/statelychart/spec",
+		"/Users/jamie/projects/deepstate"
+	],
+	"file_history":
+	[
+		"/Users/jamie/projects/statelychart/Gemfile",
+		"/Users/jamie/projects/statelychart/lib/deep_state.rb",
+		"/Users/jamie/projects/statelychart/spec/statelychart_spec.rb",
+		"/Users/jamie/projects/statelychart/lib/deep_state/example.rb",
+		"/Users/jamie/projects/statelychart/deepstate.gemspec",
+		"/Users/jamie/projects/nightwatch/spec/models/call_spec.rb",
+		"/Users/jamie/projects/nightwatch/app/models/call.rb",
+		"/Users/jamie/projects/nightwatch/app/models/shift.rb",
+		"/Users/jamie/projects/nightwatch/Gemfile",
+		"/Users/jamie/projects/nightwatch/app/models/user.rb",
+		"/Users/jamie/projects/nightwatch/app/lib/twilio/phone.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/calls_controller.rb",
+		"/Users/jamie/projects/nightwatch/spec/models/incident_spec.rb",
+		"/Users/jamie/projects/nightwatch/db/migrate/20180910214819_init_schema.rb",
+		"/Users/jamie/projects/nightwatch/app/lib/team_roster.rb",
+		"/Users/jamie/projects/nightwatch/app/models/incident.rb",
+		"/Users/jamie/projects/nightwatch/app/interactors/slack/notify_alert.rb",
+		"/Users/jamie/projects/nightwatch/app/interactors/slack/notify_assignment.rb",
+		"/Users/jamie/projects/nightwatch/db/schema.rb",
+		"/Users/jamie/projects/nightwatch/app/lib/call_workflow.rb",
+		"/Users/jamie/projects/nightwatch/app/workers/retry_call_later_worker.rb",
+		"/Users/jamie/projects/nightwatch/app/models/team.rb",
+		"/Users/jamie/projects/nightwatch/app/models/company.rb",
+		"/Users/jamie/projects/nightwatch/Procfile",
+		"/Users/jamie/projects/nightwatch/config/initializers/forest_liana.rb",
+		"/Users/jamie/projects/nightwatch/lib/tasks/auto_annotate_models.rake",
+		"/Users/jamie/projects/nightwatch/app/lib/team_schedule.rb",
+		"/Users/jamie/projects/nightwatch/app/models/call_attempt.rb",
+		"/Users/jamie/projects/nightwatch/app/workers/wake_someone_later_worker.rb",
+		"/Users/jamie/projects/nightwatch/app/interactors/make_it_ring.rb",
+		"/Users/jamie/projects/nightwatch/app/interactors/send_text_message.rb",
+		"/Users/jamie/projects/nightwatch/spec/models/shift_spec.rb",
+		"/Users/jamie/projects/nightwatch/app/interactors/enqueue_call.rb",
+		"/Users/jamie/projects/nightwatch/nightwatch.sublime-project",
+		"/Users/jamie/projects/nightwatch/app/models/concerns/calendar_event.rb",
+		"/Users/jamie/projects/nightwatch/spec/models/call_attempt_spec.rb",
+		"/Users/jamie/projects/nightwatch/app/models/finite machine.rb",
+		"/Users/jamie/projects/nightwatch/spec/models/alert_spec.rb",
+		"/Users/jamie/projects/nightwatch/config/routes.rb",
+		"/Users/jamie/projects/nightwatch/app/decorators/alert_decorator.rb",
+		"/Users/jamie/projects/nightwatch/app/workers/finish_waiting_worker.rb",
+		"/Users/jamie/projects/nightwatch/spec/factories/incidents.rb",
+		"/Users/jamie/projects/nightwatch/spec/factories/call_attempts.rb",
+		"/Users/jamie/projects/nightwatch/app/models/alert.rb",
+		"/Users/jamie/projects/nightwatch/spec/factories/calls.rb",
+		"/Users/jamie/projects/nightwatch/app/views/layouts/alert outline.txt",
+		"/Users/jamie/projects/nightwatch/spec/workers/finish_waiting_worker_spec.rb",
+		"/Users/jamie/projects/nightwatch/spec/lib/incident_workflow_spec.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/channels_controller.rb",
+		"/Users/jamie/projects/nightwatch/app/views/teams/_team.html.erb",
+		"/Users/jamie/projects/nightwatch/app/lib/slack/post_message.rb",
+		"/Users/jamie/projects/nightwatch/app/interactors/slack/open_incident.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/concerns/finite_machine_workflow.rb",
+		"/Users/jamie/projects/nightwatch/config/application.rb",
+		"/Users/jamie/projects/nightwatch/config/environments/production.rb",
+		"/Users/jamie/projects/nightwatch/light-admin-all-files/html_admin/dist/forms_uploads.html",
+		"/Users/jamie/projects/nightwatch/config/sidekiq.yml",
+		"/Users/jamie/projects/nightwatch/.overcommit.yml",
+		"/Users/jamie/projects/nightwatch/Procfile.dev",
+		"/Users/jamie/projects/nightwatch/config/initializers/sidekiq.rb",
+		"/Users/jamie/projects/nightwatch/app/models/channel.rb",
+		"/Users/jamie/projects/nightwatch/spec/factories/channels.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/concerns/alert_processor.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/incidents_controller.rb",
+		"/Users/jamie/projects/nightwatch/app/views/layouts/_menu.html.erb",
+		"/Users/jamie/projects/nightwatch/app/controllers/teams_controller.rb",
+		"/Users/jamie/projects/nightwatch/config/initializers/rollbar.rb",
+		"/Users/jamie/projects/nightwatch/app/lib/slack/api.rb",
+		"/Users/jamie/projects/nightwatch/spec/models/company_spec.rb",
+		"/Users/jamie/projects/nightwatch/spec/models/channel_spec.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/slack_install_controller.rb",
+		"/Users/jamie/projects/nightwatch/app/views/teams/index.html.erb",
+		"/Users/jamie/projects/nightwatch/app/controllers/secure_controller.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/application_controller.rb",
+		"/Users/jamie/projects/nightwatch/light-admin-all-files/html_admin/dist/users_profile_big.html",
+		"/Users/jamie/projects/nightwatch/app/lib/incident_workflow.rb",
+		"/Users/jamie/projects/nightwatch/db/migrate/20181202162359_squasher_clean.rb",
+		"/Users/jamie/projects/nightwatch/app/lib/incident_commander.rb",
+		"/Users/jamie/projects/nightwatch/overcommit.gemfile",
+		"/Users/jamie/projects/nightwatch/.git-hooks/pre_commit/ensure_focus_free_specs.rb",
+		"/Users/jamie/projects/nightwatch/.rspec",
+		"/Users/jamie/projects/nightwatch/spec/rails_helper.rb",
+		"/Users/jamie/projects/nightwatch/spec/factories/teams.rb",
+		"/Users/jamie/projects/nightwatch/.circleci/config.yml",
+		"/Users/jamie/projects/nightwatch/.chamber.pem",
+		"/Users/jamie/projects/nightwatch/app/assets/stylesheets/user-override/_user-styles.scss",
+		"/Users/jamie/projects/nightwatch/spec/factories/users.rb",
+		"/Users/jamie/projects/nightwatch/spec/factories/alerts.rb",
+		"/Users/jamie/projects/nightwatch/spec/factories/companies.rb",
+		"/Users/jamie/projects/nightwatch/lib/tasks/factorybot.rake",
+		"/Users/jamie/projects/nightwatch/config/environment.rb",
+		"/Users/jamie/projects/nightwatch/Guardfile",
+		"/Users/jamie/projects/nightwatch/app/views/shifts/index.json.jbuilder",
+		"/Users/jamie/projects/nightwatch/app/lib/email/verify.rb",
+		"/Users/jamie/projects/nightwatch/app/decorators/webhook_channel_decorator.rb",
+		"/Users/jamie/projects/nightwatch/app/assets/javascripts/application.js",
+		"/Users/jamie/projects/nightwatch/app/controllers/shifts_controller.rb",
+		"/Users/jamie/projects/nightwatch/app/decorators/shift_decorator.rb",
+		"/Users/jamie/projects/nightwatch/app/views/layouts/application.html.erb",
+		"/Users/jamie/projects/nightwatch/package.json",
+		"/Users/jamie/projects/nightwatch/config/initializers/omniauth.rb",
+		"/Users/jamie/projects/nightwatch/config/settings/settings.yml",
+		"/Users/jamie/projects/nightwatch/config/settings/settings-production.yml",
+		"/Users/jamie/projects/nightwatch/app/views/shifts/_shift.html.erb",
+		"/Users/jamie/projects/nightwatch/app/views/shifts/index.html.erb",
+		"/Users/jamie/projects/nightwatch/app/views/shifts/_slot.html.erb",
+		"/Users/jamie/projects/nightwatch/app/assets/stylesheets/application.css",
+		"/Users/jamie/projects/nightwatch/app/views/users/_user.html.erb",
+		"/Users/jamie/projects/nightwatch/app/views/channels/index.html.erb",
+		"/Users/jamie/projects/nightwatch/app/views/profiles/show.html.erb",
+		"/Users/jamie/projects/nightwatch/app/assets/stylesheets/_theme-variables.scss",
+		"/Users/jamie/projects/nightwatch/app/assets/stylesheets/bootstrap-override/_variables.scss",
+		"/Users/jamie/projects/nightwatch/app/decorators/user_decorator.rb",
+		"/Users/jamie/projects/nightwatch/app/assets/stylesheets/_scheme_dark.scss",
+		"/Users/jamie/projects/nightwatch/app/assets/stylesheets/_layout.scss",
+		"/Users/jamie/projects/nightwatch/app/lib/enqueue_call.rb",
+		"/Users/jamie/projects/nightwatch/app/views/email_channels/_email_channel.html.erb",
+		"/Users/jamie/projects/nightwatch/app/views/companies/show.html.erb",
+		"/Users/jamie/projects/nightwatch/app/lib/slack/response.rb",
+		"/Users/jamie/projects/nightwatch/spec/shared_examples_for_calendar_event.rb",
+		"/Users/jamie/projects/nightwatch/db/migrate/20180910214819_create_shifts.rb",
+		"/Users/jamie/projects/nightwatch/app/helpers/menu_helper.rb",
+		"/Users/jamie/projects/nightwatch/app/lib/slack/channel_list.rb",
+		"/Users/jamie/projects/nightwatch/db/migrate/20180909211140_create_teams.rb",
+		"/Users/jamie/projects/nightwatch/app/models/email_channel.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/profiles_controller.rb",
+		"/Users/jamie/projects/nightwatch/app/controllers/companies_controller.rb",
+		"/Users/jamie/projects/nightwatch/app/views/webhook_channels/_webhook_channel.html.erb"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"StatelyChart"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"DeepState"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/jamie/projects/statelychart/lib/deep_state/module.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										845,
+										848
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										56,
+										62
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										842,
+										845
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										56,
+										62
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"incomplete_sync": null,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/jamie/projects/statelychart/lib/deep_state/state.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										219,
+										222
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										204,
+										207
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										219,
+										222
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										204,
+										207
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"incomplete_sync": null,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/jamie/projects/statelychart/lib/deep_state/state_chart.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								408,
+								408
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										405,
+										408
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										380,
+										383
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"incomplete_sync": null,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/jamie/projects/statelychart/lib/deep_state.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 164,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/jamie/projects/statelychart/lib/deep_state/hook.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"incomplete_sync": null,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "/Users/jamie/projects/statelychart/lib/deep_state/state_definition.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1884,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1038,
+								1038
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1261,
+										1264
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1028,
+										1031
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1261,
+										1264
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1028,
+										1031
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"incomplete_sync": null,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/jamie/projects/statelychart/lib/deep_state/example.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2287,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1753,
+								1758
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1860,
+										1863
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										512,
+										514
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/jamie/projects/statelychart/deepstate.gemspec",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1859,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								191,
+								191
+							]
+						],
+						"settings":
+						{
+							"apply_syntax_touched": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										196,
+										197
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										186,
+										187
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"git_savvy.repo_path": "/Users/jamie/projects/statelychart",
+							"history_list_is_closing": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 89.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 116.0
+	},
+	"output.elm_type":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 188.0
+	},
+	"output.find_results":
+	{
+		"height": 134.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"output.show_commit_info":
+	{
+		"height": 249.0
+	},
+	"pinned_build_system": "Packages/User/RSpec.sublime-build",
+	"project": "deepstate.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"deepstate",
+				"lib/deep_state.rb"
+			],
+			[
+				"gem",
+				"statelychart.gemspec"
+			],
+			[
+				"state",
+				"lib/statelychart.rb"
+			],
+			[
+				"finmawo",
+				"app/controllers/concerns/finite_machine_workflow.rb"
+			],
+			[
+				"call",
+				"app/models/call.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"Gem",
+				"Gemfile"
+			],
+			[
+				"incide",
+				"app/models/incident.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"notia",
+				"app/interactors/slack/notify_alert.rb"
+			],
+			[
+				"callwor",
+				"app/lib/call_workflow.rb"
+			],
+			[
+				"callspec",
+				"spec/models/call_spec.rb"
+			],
+			[
+				"recall",
+				"app/workers/retry_call_later_worker.rb"
+			],
+			[
+				"teamsc",
+				"app/lib/team_schedule.rb"
+			],
+			[
+				"rake",
+				"lib/tasks/auto_annotate_models.rake"
+			],
+			[
+				"fore",
+				"config/initializers/forest_liana.rb"
+			],
+			[
+				"proc",
+				"Procfile"
+			],
+			[
+				"compan",
+				"app/models/company.rb"
+			],
+			[
+				"tea",
+				"app/models/team.rb"
+			],
+			[
+				"shift",
+				"app/models/shift.rb"
+			],
+			[
+				"team",
+				"app/models/team.rb"
+			],
+			[
+				"encal",
+				"app/interactors/enqueue_call.rb"
+			],
+			[
+				"shiftsp",
+				"spec/models/shift_spec.rb"
+			],
+			[
+				"caleve",
+				"app/models/concerns/calendar_event.rb"
+			],
+			[
+				"inciden",
+				"app/models/incident.rb"
+			],
+			[
+				"finis",
+				"app/workers/finish_waiting_worker.rb"
+			],
+			[
+				"callcon",
+				"app/controllers/calls_controller.rb"
+			],
+			[
+				"phon",
+				"app/lib/twilio/phone.rb"
+			],
+			[
+				"fin",
+				"app/models/finite machine.rb"
+			],
+			[
+				"enq",
+				"app/lib/enqueue_call.rb"
+			],
+			[
+				"incid",
+				"app/models/incident.rb"
+			],
+			[
+				"incisp",
+				"spec/models/incident_spec.rb"
+			],
+			[
+				"alert",
+				"app/models/alert.rb"
+			],
+			[
+				"faccalls",
+				"spec/factories/calls.rb"
+			],
+			[
+				"callsp",
+				"spec/models/call_spec.rb"
+			],
+			[
+				"migrate",
+				"db/migrate/20180910214819_init_schema.rb"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"app",
+				"config/application.rb"
+			],
+			[
+				"facince",
+				"spec/factories/incidents.rb"
+			],
+			[
+				"fima",
+				"app/controllers/concerns/finite_machine_workflow.rb"
+			],
+			[
+				"inspec",
+				"spec/models/incident_spec.rb"
+			],
+			[
+				"DUPL",
+				"light-admin-all-files/html_admin/dist/forms_uploads.html"
+			],
+			[
+				"incsp",
+				"spec/models/incident_spec.rb"
+			],
+			[
+				"overcom",
+				".overcommit.yml"
+			],
+			[
+				"overc",
+				".overcommit.yml"
+			],
+			[
+				"postme",
+				"app/lib/slack/post_message.rb"
+			],
+			[
+				"inci",
+				"app/models/incident.rb"
+			],
+			[
+				"channel",
+				"app/models/channel.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"alertdecor",
+				"app/decorators/alert_decorator.rb"
+			],
+			[
+				"aler",
+				"app/models/alert.rb"
+			],
+			[
+				"incidensp",
+				"spec/models/incident_spec.rb"
+			],
+			[
+				"overco",
+				".overcommit.yml"
+			],
+			[
+				"roll",
+				"config/initializers/rollbar.rb"
+			],
+			[
+				"postm",
+				"app/lib/slack/post_message.rb"
+			],
+			[
+				"inwork",
+				"app/lib/incident_workflow.rb"
+			],
+			[
+				"alerpro",
+				"app/controllers/concerns/alert_processor.rb"
+			],
+			[
+				"incidecon",
+				"app/controllers/incidents_controller.rb"
+			],
+			[
+				"teamscn",
+				"app/controllers/teams_controller.rb"
+			],
+			[
+				"teaminde",
+				"app/views/teams/index.html.erb"
+			],
+			[
+				"slacinscon",
+				"app/controllers/slack_install_controller.rb"
+			],
+			[
+				"appcon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"securecontr",
+				"app/controllers/secure_controller.rb"
+			],
+			[
+				"channconr",
+				"app/controllers/channels_controller.rb"
+			],
+			[
+				"userspe",
+				"light-admin-all-files/html_admin/dist/users_profile_big.html"
+			],
+			[
+				"chan",
+				"spec/factories/channels.rb"
+			],
+			[
+				"inc",
+				"app/lib/incident_commander.rb"
+			],
+			[
+				"ensu",
+				".git-hooks/pre_commit/ensure_focus_free_specs.rb"
+			],
+			[
+				"over",
+				".overcommit.yml"
+			],
+			[
+				"rspec",
+				".rspec"
+			],
+			[
+				"cal",
+				"app/models/call.rb"
+			],
+			[
+				"champem",
+				".chamber.pem"
+			],
+			[
+				"overcomm",
+				".overcommit.yml"
+			],
+			[
+				"chans",
+				"spec/factories/channels.rb"
+			],
+			[
+				"calls",
+				"spec/factories/calls.rb"
+			],
+			[
+				"teams",
+				"spec/factories/teams.rb"
+			],
+			[
+				"users",
+				"spec/factories/users.rb"
+			],
+			[
+				"railhelp",
+				"spec/rails_helper.rb"
+			],
+			[
+				"guar",
+				"Guardfile"
+			],
+			[
+				"alertspec",
+				"spec/models/alert_spec.rb"
+			],
+			[
+				"Gemfil",
+				"Gemfile"
+			],
+			[
+				"verif",
+				"app/lib/email/verify.rb"
+			],
+			[
+				"webchan",
+				"app/decorators/webhook_channel_decorator.rb"
+			],
+			[
+				"shidec",
+				"app/decorators/shift_decorator.rb"
+			],
+			[
+				"shicontr",
+				"app/controllers/shifts_controller.rb"
+			],
+			[
+				"shijson",
+				"app/views/shifts/index.json.jbuilder"
+			],
+			[
+				"slot",
+				"app/views/shifts/_slot.html.erb"
+			],
+			[
+				"shiftindex",
+				"app/views/shifts/index.html.erb"
+			],
+			[
+				"shiftcontr",
+				"app/controllers/shifts_controller.rb"
+			],
+			[
+				"shiftinde",
+				"app/views/shifts/index.html.erb"
+			],
+			[
+				"shifthtml",
+				"app/views/shifts/_shift.html.erb"
+			],
+			[
+				"_slot",
+				"app/views/shifts/_slot.html.erb"
+			],
+			[
+				"_shi",
+				"app/views/shifts/_shift.html.erb"
+			],
+			[
+				"shiftcon",
+				"app/controllers/shifts_controller.rb"
+			],
+			[
+				"setyml",
+				"config/settings/settings.yml"
+			],
+			[
+				"omni",
+				"config/initializers/omniauth.rb"
+			],
+			[
+				"appcss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"shiftind",
+				"app/views/shifts/index.html.erb"
+			],
+			[
+				"apphtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"shiftsinde",
+				"app/views/shifts/index.html.erb"
+			],
+			[
+				"userdec",
+				"app/decorators/user_decorator.rb"
+			],
+			[
+				"_user",
+				"app/views/users/_user.html.erb"
+			],
+			[
+				"channindex",
+				"app/views/channels/index.html.erb"
+			],
+			[
+				"profileshow",
+				"app/views/profiles/show.html.erb"
+			],
+			[
+				"slothtml",
+				"app/views/shifts/_slot.html.erb"
+			],
+			[
+				"channhtml",
+				"app/views/email_channels/_email_channel.html.erb"
+			],
+			[
+				"creshift",
+				"db/migrate/20180910214819_create_shifts.rb"
+			],
+			[
+				"shared",
+				"spec/shared_examples_for_calendar_event.rb"
+			],
+			[
+				"menu",
+				"app/views/layouts/_menu.html.erb"
+			],
+			[
+				"menuhep",
+				"app/helpers/menu_helper.rb"
+			],
+			[
+				"teamcon",
+				"app/controllers/teams_controller.rb"
+			],
+			[
+				"chaninde",
+				"app/views/channels/index.html.erb"
+			],
+			[
+				"teamshow",
+				"app/views/teams/show.html.erb"
+			],
+			[
+				"slachan",
+				"app/lib/slack/channel_list.rb"
+			],
+			[
+				"comp",
+				"app/models/company.rb"
+			],
+			[
+				"slack",
+				"app/controllers/slack_install_controller.rb"
+			],
+			[
+				"profshow",
+				"app/views/profiles/show.html.erb"
+			],
+			[
+				"company",
+				"app/models/company.rb"
+			],
+			[
+				"prof",
+				"app/controllers/profiles_controller.rb"
+			],
+			[
+				"menuh",
+				"app/views/layouts/_menu.html.erb"
+			],
+			[
+				"sepro",
+				"config/settings/settings-production.yml"
+			],
+			[
+				"sett",
+				"config/settings/settings.yml"
+			],
+			[
+				"slackrep",
+				"app/lib/slack/response.rb"
+			],
+			[
+				"slackapi",
+				"app/lib/slack/api.rb"
+			],
+			[
+				"emachan",
+				"app/models/email_channel.rb"
+			],
+			[
+				"encall",
+				"app/lib/enqueue_call.rb"
+			],
+			[
+				"fores",
+				"config/initializers/forest_liana.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/withcoach.sublime-project"
+			],
+			[
+				"zap",
+				"~/projects/zapier client.sublime-project"
+			],
+			[
+				"retent",
+				"~/projects/retention.works/retentionworks.sublime-workspace"
+			],
+			[
+				"reten",
+				"~/projects/retention.works/retentionworks.sublime-workspace"
+			],
+			[
+				"ideas",
+				"~/projects/ideasasylum.com/ideasasylum.com.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 346.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
