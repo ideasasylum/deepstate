@@ -1,15 +1,15 @@
-require 'ostruct'
+require "ostruct"
 
 # Top-level module interface and DSL
 module DeepState
   # The initial state. Basically just a state with a label
-  def initial name, args={}, &block
+  def initial name, args = {}, &block
     root_state_definition.initial name, args, &block
   end
 
   # Define a state
-  def state name, args={}, &block
-    root_state_definition.state args, &block
+  def state name, args = {}, &block
+    root_state_definition.state name, &block
   end
 
   # Hook call when every state is entered. Like a global handler
@@ -18,8 +18,8 @@ module DeepState
   end
 
   # The terminal state. Basically just a state with a label
-  def terminal name, args={}, &block
-    root_state_definition.terminal args, &block
+  def terminal name, &block
+    root_state_definition.terminal name, &block
   end
 
   def root_state_definition

@@ -1,14 +1,16 @@
 require "deep_state/validation_visitor"
+require "deep_state/dot_visitor"
+require "deep_state/xstate_visitor"
 
 module DeepState
   class StateDefinition
     attr_reader :name, :type, :hooks, :events, :states,
-                :initial_state, :terminal_state, :parent_state
+      :initial_state, :terminal_state, :parent_state
 
-    def initialize name, parent_state=nil, type: :state
+    def initialize name, parent_state = nil, type: :state
       @name = name
       @type = type
-      @hooks = { on_enter: [] }
+      @hooks = {on_enter: []}
       @parent_state = parent_state
       @events = {}
       @states = []
@@ -17,7 +19,7 @@ module DeepState
     end
 
     # Create an initial sub-state
-    def initial name, args={}, &block
+    def initial name, args = {}, &block
       raise DuplicateInitialState if @initial_state
 
       # Create a substate
@@ -28,16 +30,18 @@ module DeepState
       @states << s
       # Assign this substate as the initial state
       @initial_state = s
+      s
     end
 
     # Define an on_enter event handler
-    def on_enter conditions={}, &block
+    def on_enter conditions = {}, &block
       hooks[:on_enter] << DeepState::Hook.new(self, conditions, &block)
     end
 
     # Create a new substate
     def state name, &block
-      s=StateDefinition.new name, self
+      binding.pry if name == {}
+      s = StateDefinition.new name, self
       s.instance_eval &block if block_given?
       # Add the state to the list of states
       @states << s
@@ -45,10 +49,10 @@ module DeepState
     end
 
     # Create a transition between states
-    def event transition, conditions={}, &block
+    def event transition, conditions = {}, &block
       name = transition.keys.first
       destination = transition.values.first
-      e = DeepState::Event.new name, self, destination, conditions
+      e = DeepState::Event.new name, self.name, destination, conditions
       e.instance_eval &block if block_given?
       @events[name.to_sym] = e
       e
@@ -57,10 +61,10 @@ module DeepState
     # Create a terminal state
     def terminal name
       # Create a substate
-      s = StateDefinition.new name, type: :terminal
+      s = StateDefinition.new name, self, type: :terminal
       # Process the definition as a block
       s.instance_eval &block if block_given?
-      # Store the terimnal state in the list of states
+      # Store the terminal state in the list of states
       @states << s
       # Assign this substate as the terminal state
       @terminal_state = s
@@ -77,6 +81,10 @@ module DeepState
       type == :terminal
     end
 
+    def root?
+      parent_state.nil?
+    end
+
     def compound_state?
       states.any?
     end
@@ -88,6 +96,18 @@ module DeepState
     def validate
       validator = check_validity DeepState::ValidationVisitor.new
       validator.valid?
+    end
+
+    def to_dot visitor=DeepState::DotVisitor.new
+      visitor.visit self
+      states.each { |state| state.to_dot(visitor) }
+      visitor
+    end
+
+    def to_js visitor=DeepState::XStateVisitor.new
+      visitor.visit self
+      states.each { |state| state.to_js(visitor) }
+      visitor
     end
 
     # Pass in the validator to build up a picture of the state machine

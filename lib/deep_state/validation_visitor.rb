@@ -14,31 +14,52 @@ module DeepState
       @states << state
       @initial_states << state if state.initial?
       @terminal_states << state if state.terminal?
-      @events += state.events.values
+      @events.unshift(*state.events.values)
     end
 
     def valid?
-      begin
-        validate
-        return true
-      rescue DeepState::Error
-        return false
-      end
+      validate
+      true
+    rescue DeepState::Error
+      false
     end
 
     def validate
-      validity = true
+      raise DeepState::Error if more_than_one_initial_state?
+      raise DeepState::Error if duplicate_state_names?
+      raise DeepState::Error if duplicate_event_names?
 
-      initial_states_by_parent_state = initial_states.group_by {|s| s.parent_state }
-      raise DeepState::Error if initial_states_by_parent_state.any? {|parent, initial_states| initial_states.length > 1}
+      true
+    end
 
-      events_by_name = events.group_by &:name
-      raise DeepState::Error if events_by_name.any? { |e| e.length > 1 }
+    def duplicate_state_names?
+      states_by_name.any? { |name, states|
+        states.length > 1
+      }
+    end
 
-      states_by_name = states.group_by &:name
-      raise DeepState::Error if states_by_name.any? { |s| s.length > 1 }
+    def duplicate_event_names?
+      events_by_name.any? { |name, events|
+        events.length > 1
+      }
+    end
 
-      validity
+    def more_than_one_initial_state?
+      initial_states_by_parent_state.any? {|parent, initial_states|
+        initial_states.length > 1
+      }
+    end
+
+    def initial_states_by_parent_state
+      initial_states.group_by {|s| s.parent_state }
+    end
+
+    def events_by_name
+      events.group_by &:name
+    end
+
+    def states_by_name
+      states.group_by &:name
     end
   end
 end

@@ -1,9 +1,11 @@
 module DeepState
   class Event
+    attr_reader :name, :from, :to
+
     def initialize name, from_state, to_state, conditions, &block
       @name = name
-      @from_state = from_state
-      @to_state = to_state
+      @from = from_state
+      @to = to_state
       @conditions = conditions
       @block = block
     end
