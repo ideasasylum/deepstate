@@ -77,7 +77,7 @@ RSpec.describe DeepState::StateDefinition do
     end
   end
 
-  describe "#check_validity" do
+  describe "#visit" do
     context "with nested states" do
       let(:root) { DeepState::StateDefinition.new "root", nil }
       let!(:initial_state) do
@@ -91,9 +91,9 @@ RSpec.describe DeepState::StateDefinition do
       end
 
       let(:visitor) { DeepState::ValidationVisitor.new }
-      subject { root.check_validity visitor }
+      subject { root.visit visitor }
 
-      it "visits the root then nested state", :focus do
+      it "visits the root then nested state" do
         expect(visitor).to receive(:visit).with(root).ordered
         expect(visitor).to receive(:visit).with(initial_state).ordered
         subject

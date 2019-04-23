@@ -25,11 +25,18 @@ module DeepState
     end
 
     def validate
+      raise DeepState::Error if compound_state_without_initial_state?
       raise DeepState::Error if more_than_one_initial_state?
       raise DeepState::Error if duplicate_state_names?
       raise DeepState::Error if duplicate_event_names?
 
       true
+    end
+
+    def compound_state_without_initial_state?
+      @states.any? { |state|
+        state.compound_state? && state.initial_state.nil?
+      }
     end
 
     def duplicate_state_names?

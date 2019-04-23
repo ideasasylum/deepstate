@@ -71,7 +71,7 @@ module DeepState
     end
 
     def to_s
-      "const fetchMachine = Machine(\n#{@json.to_json}\n);"
+      "const machine = Machine(\n#{@json.to_json}\n);"
     end
   end
 end

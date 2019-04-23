@@ -44,6 +44,20 @@ RSpec.describe DeepState::ValidationVisitor do
       end
     end
 
+    context "with duplicate states" do
+      let(:compound_state) do
+        DeepState::StateDefinition.new(:first).tap { |s|
+          s.state :nested_state
+        }
+      end
+
+      let(:states) { [compound_state] }
+
+      it "raises DeepState::Error" do
+        expect {subject}.to raise_error(DeepState::Error)
+      end
+    end
+
     context "with duplicate events" do
       let(:first_state) do
         DeepState::StateDefinition.new(:first).tap { |s|

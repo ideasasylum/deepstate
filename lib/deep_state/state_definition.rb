@@ -94,27 +94,23 @@ module DeepState
     end
 
     def validate
-      validator = check_validity DeepState::ValidationVisitor.new
+      # Pass in the validator to build up a picture of the state machine
+      validator = visit DeepState::ValidationVisitor.new
       validator.valid?
     end
 
-    def to_dot visitor=DeepState::DotVisitor.new
+    def visit visitor
       visitor.visit self
-      states.each { |state| state.to_dot(visitor) }
+      states.each { |state| state.visit(visitor) }
       visitor
     end
 
-    def to_js visitor=DeepState::XStateVisitor.new
-      visitor.visit self
-      states.each { |state| state.to_js(visitor) }
-      visitor
+    def to_dot
+      visit DeepState::DotVisitor.new
     end
 
-    # Pass in the validator to build up a picture of the state machine
-    def check_validity validator
-      validator.visit self
-      states.each { |state| state.check_validity(validator) }
-      validator
+    def to_js
+      visit DeepState::XStateVisitor.new
     end
   end
 end
