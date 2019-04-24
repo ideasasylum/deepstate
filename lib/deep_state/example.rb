@@ -2,7 +2,7 @@ require "deep_state"
 
 # IncidentStateMachine.build incident: incident
 class DeepState::Example
-  extend DeepState
+  include DeepState
 
   on_enter do
     incident.state = state
