@@ -2,7 +2,7 @@ require 'deep_state/machine_visitor'
 
 module DeepState
   module StateMachine
-    attr_accessor :current_state
+    attr_reader :current_state
 
     # Create an instance of this state machine with a given context
     def initialize root_definition, current_state_name=nil, context={}
@@ -40,6 +40,14 @@ module DeepState
 
     def transitions
       current_states.flat_map { |s| s.events.values }
+    end
+
+    def can? transition_name
+      transitions.any? { |e| e.name == transition_name }
+    end
+
+    def is? state_name
+      current_states.any? { |s| s.name == state_name }
     end
 
     private
