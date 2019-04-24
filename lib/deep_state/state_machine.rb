@@ -8,14 +8,20 @@ module DeepState
       @context = context
 
       @details = DeepState::MachineVisitor.new
-      root_definition.visit @details
+      @root.visit @details
+
+      validate
 
       # Default to the initial state
       first_state = fetch_state(current_state_name)
-      first_state ||= root_definition
+      first_state ||= @root
       set_current_state first_state
 
       self
+    end
+
+    def validate
+      @root.validate
     end
 
     def current_state=state_name

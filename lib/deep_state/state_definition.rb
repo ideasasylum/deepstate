@@ -115,7 +115,7 @@ module DeepState
     def validate
       # Pass in the validator to build up a picture of the state machine
       validator = visit DeepState::ValidationVisitor.new
-      validator.valid?
+      validator.validate
     end
 
     # Iterate as a depth-first search through the states, and call visitor#visit

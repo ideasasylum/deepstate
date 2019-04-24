@@ -4,7 +4,7 @@ RSpec.describe DeepState::StateMachine do
 
     initial :sleeping do
       event wake: :awake
-      event die: :dead
+      event die_peacefully: :dead
 
       initial :dreaming do
         event rest: :rem
@@ -16,7 +16,7 @@ RSpec.describe DeepState::StateMachine do
     end
 
     state :awake do
-      event die: :dead
+      event drop_dead: :dead
       initial :sleepy do
         event drink_coffee: :ready_for_the_day
       end
@@ -51,7 +51,7 @@ RSpec.describe DeepState::StateMachine do
     context 'for a compound state' do
       let(:current_state) { :dreaming }
       it 'fetches the transitions in inside-out order' do
-        expect(machine.transitions.collect(&:name)).to eq([:rest, :wake, :die])
+        expect(machine.transitions.collect(&:name)).to eq([:rest, :wake, :die_peacefully])
       end
     end
   end

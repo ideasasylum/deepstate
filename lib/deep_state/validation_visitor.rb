@@ -25,10 +25,10 @@ module DeepState
     end
 
     def validate
-      raise DeepState::Error if compound_state_without_initial_state?
-      raise DeepState::Error if more_than_one_initial_state?
-      raise DeepState::Error if duplicate_state_names?
-      raise DeepState::Error if duplicate_event_names?
+      raise DeepState::Error, 'Duplicate state names' if duplicate_state_names?
+      raise DeepState::Error, 'Duplicate event names' if duplicate_event_names?
+      raise DeepState::Error, 'Missing initial state' if compound_state_without_initial_state?
+      raise DeepState::Error, 'Duplicate initial states' if more_than_one_initial_state?
 
       true
     end
