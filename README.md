@@ -1,6 +1,7 @@
 # DeepState
 
-![](https://app.codeship.com/projects/79963640-48fa-0137-7372-027095d735c1/status?branch=master)
+[![Tests](https://app.codeship.com/projects/79963640-48fa-0137-7372-027095d735c1/status?branch=master)](https://app.codeship.com/projects/79963640-48fa-0137-7372-027095d735c1/status?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/521f9df0f0b22032156b/maintainability)](https://codeclimate.com/github/ideasasylum/deepstate/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/521f9df0f0b22032156b/test_coverage)](https://codeclimate.com/github/ideasasylum/deepstate/test_coverage)
+
 
 A Ruby gem for implementing [State Charts](https://statecharts.github.io/) with an simple DSL
 
