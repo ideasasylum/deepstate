@@ -77,6 +77,33 @@ RSpec.describe DeepState::StateDefinition do
     end
   end
 
+  describe 'parents' do
+    let!(:root) { DeepState::StateDefinition.new(:root) }
+    let!(:one) { root.initial :one }
+    let!(:one_one) { one.initial :one_one }
+    let!(:one_two) { one.state :one_two }
+    let!(:two) { root.state :two }
+    let!(:two_one) { two.initial :two_one }
+    let!(:two_two) { two.state :two_two }
+    let!(:two_two_one) { two_two.initial :two_two_one }
+
+    subject { state.parents }
+    let(:state) { two_two_one }
+
+    it 'yield the parents' do
+      expect { |b| subject.each(&b) }.to yield_successive_args(two_two, two)
+    end
+
+    context 'root states' do
+      let(:state) { one }
+
+      it 'does not include hidden root state' do
+        expect { |b| subject.each(&b) }.to yield_successive_args()
+      end
+    end
+
+  end
+
   describe "#visit" do
     context "with nested states" do
       let(:root) { DeepState::StateDefinition.new "root", nil }

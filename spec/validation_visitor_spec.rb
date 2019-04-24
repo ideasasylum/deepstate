@@ -73,7 +73,7 @@ RSpec.describe DeepState::ValidationVisitor do
 
       let(:states) { [first_state, second_state] }
 
-      it "raises DeepState::Error", :focus do
+      it "raises DeepState::Error" do
         expect {subject}.to raise_error(DeepState::Error)
       end
     end

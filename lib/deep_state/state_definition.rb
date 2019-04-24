@@ -93,12 +93,24 @@ module DeepState
       states.none?
     end
 
+    def parents
+      Enumerator.new do |yielder|
+        p = parent_state
+        while p
+          yielder << p unless p.root?
+          p = p.parent_state
+        end
+      end
+    end
+
     def validate
       # Pass in the validator to build up a picture of the state machine
       validator = visit DeepState::ValidationVisitor.new
       validator.valid?
     end
 
+    # Iterate as a depth-first search through the states, and call visitor#visit
+    # on the visitor instance for each state
     def visit visitor
       visitor.visit self
       states.each { |state| state.visit(visitor) }
