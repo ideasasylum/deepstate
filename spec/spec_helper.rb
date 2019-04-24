@@ -1,7 +1,8 @@
-require "bundler/setup"
-require "pry"
 require 'simplecov'
 SimpleCov.start
+
+require "bundler/setup"
+require "pry"
 
 require "deep_state"
 
