@@ -31,9 +31,10 @@ module DeepState
     end
 
     def transition event_name
-      event = current_state.events[event_name]
+      event = transitions.find { |t| t.name == event_name }
+      raise DeepState::Error unless event
 
-      current_state = event.to
+      set_current_state fetch_state(event.to)
     end
 
     def transitions
@@ -52,6 +53,10 @@ module DeepState
 
     def fetch_state name
       @details.states[name]
+    end
+
+    def fetch_event name
+      @details.events[name]
     end
 
     def set_current_state state

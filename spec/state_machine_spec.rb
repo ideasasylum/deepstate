@@ -98,4 +98,26 @@ RSpec.describe DeepState::StateMachine do
     end
   end
 
+  describe 'transition' do
+    context 'atomic state' do
+      let(:current_state) { :dead }
+
+      it 'to a valid state' do
+        expect { machine.transition(:restart) }.to change(machine, :current_state).from(:dead).to(:sleepy)
+      end
+
+      it 'to an invalid state' do
+        expect { machine.transition(:wake) }.to raise_error(DeepState::Error)
+      end
+    end
+
+    context 'for a compound state' do
+      let(:current_state) { :dreaming }
+
+      it 'it enters the substate' do
+        expect { machine.transition(:wake)}.to change(machine, :current_state).to(:sleepy)
+      end
+    end
+  end
+
 end
