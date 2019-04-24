@@ -41,10 +41,6 @@ module DeepState
         @json
       end
 
-      binding.pry if parent_doc.nil?
-
-      binding.pry if state.name == :open
-
       parent_doc[:states] ||= {}
       if !state.root?
         parent_doc[:states][state.name.to_sym] = state_def(state)
