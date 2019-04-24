@@ -20,11 +20,11 @@ module DeepState
 
     # Create an initial sub-state
     def initial name, args = {}, &block
-      raise DuplicateInitialState if @initial_state
+      raise DuplicateInitialState, "#{@initial_state.name} exists" if @initial_state
 
       # Create a substate
       s = StateDefinition.new name, self, type: :initial
-      # PRocess the definition as a block
+      # Process the definition as a block
       s.instance_eval &block if block_given?
       # Store this as a state
       @states << s
@@ -101,6 +101,17 @@ module DeepState
         while p
           yielder << p unless p.root?
           p = p.parent_state
+        end
+      end
+    end
+
+    def children
+      Enumerator.new do |yielder|
+        # Walk down the initial states
+        s = initial_state
+        while s
+          yielder << s
+          s = s.initial_state
         end
       end
     end

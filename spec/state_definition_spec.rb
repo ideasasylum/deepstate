@@ -102,6 +102,39 @@ RSpec.describe DeepState::StateDefinition do
       end
     end
 
+    describe 'children' do
+      let!(:root) { DeepState::StateDefinition.new(:root) }
+      let!(:one) { root.initial :one }
+      let!(:one_one) { one.initial :one_one }
+      let!(:one_two) { one.state :one_two }
+      let!(:two) { root.state :two }
+      let!(:two_one) { two.initial :two_one }
+      let!(:two_two) { two.state :two_two }
+      let!(:two_two_one) { two_two.initial :two_two_one }
+
+      subject { state.children }
+      let(:state) { root }
+
+      it 'yield the initial child states' do
+        expect { |b| subject.each(&b) }.to yield_successive_args(one, one_one)
+      end
+
+      context 'substate state' do
+        let(:state) { one }
+
+        it 'does not include hidden root state' do
+          expect { |b| subject.each(&b) }.to yield_successive_args(one_one)
+        end
+      end
+
+      context 'atomic state' do
+        let(:state) { one_one }
+
+        it 'does not include hidden root state' do
+          expect { |b| subject.each(&b) }.to yield_successive_args()
+        end
+      end
+    end
   end
 
   describe "#visit" do

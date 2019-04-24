@@ -1,6 +1,6 @@
 require "deep_state"
 
-# IncidentStateMachine.build incident: incident
+# DeepState::Example.new incident: incident
 class DeepState::Example
   include DeepState
 
