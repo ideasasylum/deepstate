@@ -1,7 +1,3 @@
-require "deep_state/validation_visitor"
-require "deep_state/dot_visitor"
-require "deep_state/xstate_visitor"
-
 module DeepState
   class StateDefinition
     attr_reader :name, :type, :hooks, :events, :states,

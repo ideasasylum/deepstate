@@ -1,5 +1,3 @@
-require 'deep_state/machine_visitor'
-
 module DeepState
   module StateMachine
     attr_reader :current_state
