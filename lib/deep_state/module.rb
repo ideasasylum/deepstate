@@ -35,7 +35,6 @@ module DeepState
     def new *args, &block
       instance = allocate
       instance.singleton_class.include(DeepState::StateMachine)
-      binding.pry
       instance.send(:initialize, root_state_definition, *args, &block)
     end
   end
