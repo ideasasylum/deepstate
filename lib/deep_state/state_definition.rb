@@ -93,8 +93,10 @@ module DeepState
       states.none?
     end
 
+    # Return an enumerator of each parent state
     def parents
       Enumerator.new do |yielder|
+        # Walk up the parent states, excluding the very root state
         p = parent_state
         while p
           yielder << p unless p.root?

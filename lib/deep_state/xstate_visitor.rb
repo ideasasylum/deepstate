@@ -1,12 +1,9 @@
 module DeepState
   class XStateVisitor
-    attr_reader :states, :events, :terminal_states, :initial_states
+    attr_reader :states, :json
 
     def initialize
       @states = []
-      @events = []
-      @terminal_states = []
-      @initial_states = []
       @json = {}
       @json[:id] = 'test'
       @json[:states] = {}
@@ -14,38 +11,28 @@ module DeepState
 
     # Collect the state and event data
     def visit state
-      print state.name
-      # binding.pry if state.name == :assigned
       @states << state
 
-      @initial_states << state if state.initial?
-      @terminal_states << state if state.terminal?
-      @events.unshift(*state.events.values) if state.events.any?
-
-      # if state.parent_state
+      # Create the path of the parent nodes
       path = []
-      parent = state.parent_state
-      while parent && !parent.root?
+      parent = state.parents.each do |parent|
         path.unshift parent.name.to_sym
         path.unshift :states
-        parent = parent.parent_state
       end
-
-      puts path.inspect
-      # binding.pry if path == []
-      # binding.pry if @json[:states].dig(*path).nil?
-
+      # Use the path to find the right json node
       parent_doc = if path.any?
         @json.dig(*path)
       else
         @json
       end
 
+      # Add the state
       parent_doc[:states] ||= {}
       if !state.root?
         parent_doc[:states][state.name.to_sym] = state_def(state)
       end
 
+      # Add the initial states (top-level or for a substate)
       if state.root?
         parent_doc[:initial] = state.initial_state.name
       elsif state.compound_state?
@@ -55,14 +42,19 @@ module DeepState
 
     def state_def state
       state_json = {}
+
+      # Initialize the substates
       if state.compound_state?
         state_json[:states] = {}
       end
+
+      # Add the events for this state
       if state.events.any?
         on = {}
         state.events.values.each { |e| on[e.name] = e.to }
         state_json[:on] = on
       end
+
       state_json
     end
 
