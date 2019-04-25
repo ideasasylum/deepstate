@@ -77,6 +77,51 @@ RSpec.describe DeepState::StateDefinition do
     end
   end
 
+
+  describe "#on_entry" do
+    let(:root) { DeepState::StateDefinition.new "root", nil }
+
+    let!(:state) do
+      root.state :active do
+        on_entry
+      end
+    end
+
+    it "adds the hook to the hooks list" do
+      expect(state.on_entry_hooks.length).to eq(1)
+    end
+
+    it "is a Hook" do
+      expect(state.on_entry_hooks.first).to be_a(DeepState::Hook)
+    end
+
+    it "sets the hook's state" do
+      expect(state.on_entry_hooks.first.state).to eq(state)
+    end
+  end
+
+  describe "#on_exit" do
+    let(:root) { DeepState::StateDefinition.new "root", nil }
+
+    let!(:state) do
+      root.state :active do
+        on_exit
+      end
+    end
+
+    it "adds the hook to the hooks list" do
+      expect(state.on_exit_hooks.length).to eq(1)
+    end
+
+    it "is a Hook" do
+      expect(state.on_exit_hooks.first).to be_a(DeepState::Hook)
+    end
+
+    it "sets the hook's state" do
+      expect(state.on_exit_hooks.first.state).to eq(state)
+    end
+  end
+
   describe 'parents' do
     let!(:root) { DeepState::StateDefinition.new(:root) }
     let!(:one) { root.initial :one }

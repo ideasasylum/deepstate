@@ -1,6 +1,9 @@
 module DeepState
   class Hook
+    attr_reader :state, :conditions
+
     def initialize state, conditions, &block
+      @state = state
       @conditions = conditions
       @block = block
     end
@@ -11,6 +14,7 @@ module DeepState
 
     def run
       # run the block in the context of the state
+
     end
   end
 end

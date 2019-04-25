@@ -19,8 +19,13 @@ module DeepState
     end
 
     # Hook call when every state is entered. Like a global handler
-    def on_enter &block
-      root_state_definition.on_enter &block
+    def on_entry &block
+      root_state_definition.on_entry &block
+    end
+
+    # Hook call when every state is entered. Like a global handler
+    def on_exit &block
+      root_state_definition.on_exit &block
     end
 
     # The terminal state. Basically just a state with a label
