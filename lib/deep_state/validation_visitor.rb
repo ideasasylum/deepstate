@@ -62,11 +62,11 @@ module DeepState
     end
 
     def events_by_name
-      events.group_by &:name
+      events.group_by(&:name)
     end
 
     def states_by_name
-      states.group_by &:name
+      states.group_by(&:name)
     end
   end
 end

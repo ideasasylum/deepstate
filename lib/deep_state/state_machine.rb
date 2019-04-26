@@ -15,9 +15,7 @@ module DeepState
       # Default to the initial state
       first_state = fetch_state(current_state_name)
       first_state ||= @root
-      set_current_state first_state
-
-      self
+      update_current_state first_state
     end
 
     def validate
@@ -25,7 +23,7 @@ module DeepState
     end
 
     def current_state=state_name
-      set_current_state fetch_state(state_name)
+      update_current_state fetch_state(state_name)
     end
 
     def current_states
@@ -41,7 +39,7 @@ module DeepState
       raise DeepState::Error unless event
 
       run_exit_hooks event.name, event.from, event.to
-      set_current_state fetch_state(event.to)
+      update_current_state fetch_state(event.to)
       run_entry_hooks event_name, event.from, event.to
     end
 
@@ -67,7 +65,7 @@ module DeepState
       @details.events[name]
     end
 
-    def set_current_state state
+    def update_current_state state
       # Calculate the actual initial state if it's a compound state
       state = state.children.collect.to_a.last || state
       @current_state = state.name

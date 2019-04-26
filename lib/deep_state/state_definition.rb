@@ -1,8 +1,7 @@
 module DeepState
   class StateDefinition
     attr_reader :name, :type, :events, :states,
-      :initial_state, :terminal_state, :parent_state,
-      :on_entry_hooks
+      :initial_state, :terminal_state, :parent_state
 
     def initialize name, parent_state = nil, type: :state
       @name = name
@@ -22,7 +21,7 @@ module DeepState
       # Create a substate
       s = StateDefinition.new name, self, type: :initial
       # Process the definition as a block
-      s.instance_eval &block if block_given?
+      s.instance_eval(&block) if block_given?
       # Store this as a state
       @states[s.name] = s
       # Assign this substate as the initial state
@@ -51,7 +50,7 @@ module DeepState
     # Create a new substate
     def state name, &block
       s = StateDefinition.new name, self
-      s.instance_eval &block if block_given?
+      s.instance_eval(&block) if block_given?
       # Add the state to the list of states
       @states[s.name] = s
       s
@@ -62,7 +61,7 @@ module DeepState
       name = transition.keys.first
       destination = transition.values.first
       e = DeepState::Event.new name, self.name, destination, conditions
-      e.instance_eval &block if block_given?
+      e.instance_eval(&block) if block_given?
       @events[name.to_sym] = e
       e
     end
@@ -72,7 +71,7 @@ module DeepState
       # Create a substate
       s = StateDefinition.new name, self, type: :terminal
       # Process the definition as a block
-      s.instance_eval &block if block_given?
+      s.instance_eval(&block) if block_given?
       # Store the terminal state in the list of states
       @states[s.name] = s
       # Assign this substate as the terminal state

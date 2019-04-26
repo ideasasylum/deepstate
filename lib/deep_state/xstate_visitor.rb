@@ -15,10 +15,11 @@ module DeepState
 
       # Create the path of the parent nodes
       path = []
-      parent = state.parents.each do |parent|
+      state.parents.each do |parent|
         path.unshift parent.name.to_sym
         path.unshift :states
       end
+
       # Use the path to find the right json node
       parent_doc = if path.any?
         @json.dig(*path)
