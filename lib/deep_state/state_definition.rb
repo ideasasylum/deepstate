@@ -103,12 +103,12 @@ module DeepState
     end
 
     # Return an enumerator of each parent state
-    def parents
+    def parents include_root: false
       Enumerator.new do |yielder|
         # Walk up the parent states, excluding the very root state
         p = parent_state
         while p
-          yielder << p unless p.root?
+          yielder << p if include_root || !p.root?
           p = p.parent_state
         end
       end
@@ -132,13 +132,14 @@ module DeepState
     end
 
     def entry_hooks_list
-      (on_entry_hooks + parents.collect { |s| s.on_entry_hooks })
+      (on_entry_hooks + parents(include_root: true).collect { |s| s.on_entry_hooks })
       .flatten
       .reverse
     end
 
     def exit_hooks_list
-      (on_exit_hooks + parents.collect { |s| s.on_exit_hooks }).flatten
+      (on_exit_hooks + parents(include_root: true).collect { |s| s.on_exit_hooks })
+      .flatten
     end
 
     # Iterate as a depth-first search through the states, and call visitor#visit
