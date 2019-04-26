@@ -10,21 +10,21 @@ module DeepState
       @hooks = {on_entry: [], on_exit: []}
       @parent_state = parent_state
       @events = {}
-      @states = []
+      @states = {}
       @initial_state = nil
       @terminal_state = nil
     end
 
     # Create an initial sub-state
     def initial name, args = {}, &block
-      raise DuplicateInitialState, "#{@initial_state.name} exists" if @initial_state
+      raise DuplicateInitialState, "#{@initial_state.name} exists when adding #{name}" if @initial_state
 
       # Create a substate
       s = StateDefinition.new name, self, type: :initial
       # Process the definition as a block
       s.instance_eval &block if block_given?
       # Store this as a state
-      @states << s
+      @states[s.name] = s
       # Assign this substate as the initial state
       @initial_state = s
       s
@@ -53,7 +53,7 @@ module DeepState
       s = StateDefinition.new name, self
       s.instance_eval &block if block_given?
       # Add the state to the list of states
-      @states << s
+      @states[s.name] = s
       s
     end
 
@@ -74,7 +74,7 @@ module DeepState
       # Process the definition as a block
       s.instance_eval &block if block_given?
       # Store the terminal state in the list of states
-      @states << s
+      @states[s.name] = s
       # Assign this substate as the terminal state
       @terminal_state = s
       s
@@ -143,7 +143,7 @@ module DeepState
     # on the visitor instance for each state
     def visit visitor
       visitor.visit self
-      states.each { |state| state.visit(visitor) }
+      states.each { |name, state| state.visit(visitor) }
       visitor
     end
 

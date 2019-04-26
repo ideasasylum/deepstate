@@ -11,7 +11,7 @@ RSpec.describe DeepState::StateDefinition do
     end
 
     it "includes the initial state in the states" do
-      expect(root.states).to include(initial_state)
+      expect(root.states[:waiting]).to eq(initial_state)
     end
 
     it "sets the name of the initial state" do
@@ -40,7 +40,7 @@ RSpec.describe DeepState::StateDefinition do
       end
 
       it "adds the nested state" do
-        expect(initial_state.states).to include(nested_state)
+        expect(initial_state.states[:active]).to eq(nested_state)
       end
 
       it "an atomic state" do
@@ -65,7 +65,7 @@ RSpec.describe DeepState::StateDefinition do
     end
 
     it "adds the state to the states list" do
-      expect(root.states).to include(state)
+      expect(root.states[state.name]).to eq(state)
     end
 
     it "sets the name of the state" do
