@@ -34,7 +34,7 @@ module DeepState
     end
 
     def root_state_definition
-      @@root_state_definition ||= StateDefinition.new :root, nil
+      @root_state_definition ||= StateDefinition.new :root, nil
     end
 
     def new *args, &block
