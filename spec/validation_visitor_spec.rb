@@ -46,9 +46,9 @@ RSpec.describe DeepState::ValidationVisitor do
 
     context "with duplicate states" do
       let(:compound_state) do
-        DeepState::StateDefinition.new(:first).tap { |s|
+        DeepState::StateDefinition.new(:first).tap do |s|
           s.state :nested_state
-        }
+        end
       end
 
       let(:states) { [compound_state] }
@@ -60,15 +60,15 @@ RSpec.describe DeepState::ValidationVisitor do
 
     context "with duplicate events" do
       let(:first_state) do
-        DeepState::StateDefinition.new(:first).tap { |s|
+        DeepState::StateDefinition.new(:first).tap do |s|
           s.event next: :second_state
-        }
+        end
       end
 
       let(:second_state) do
-        DeepState::StateDefinition.new(:second).tap { |s|
+        DeepState::StateDefinition.new(:second).tap do |s|
           s.event next: :first_state
-        }
+        end
       end
 
       let(:states) { [first_state, second_state] }

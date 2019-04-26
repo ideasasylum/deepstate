@@ -1,4 +1,4 @@
-require 'life_of_a_cat'
+require "life_of_a_cat"
 
 RSpec.describe DeepState::StateDefinition do
   describe "#initial_state" do
@@ -79,7 +79,6 @@ RSpec.describe DeepState::StateDefinition do
     end
   end
 
-
   describe "#on_entry" do
     let(:root) { DeepState::StateDefinition.new "root", nil }
 
@@ -116,12 +115,12 @@ RSpec.describe DeepState::StateDefinition do
     end
   end
 
-  describe 'entry_hooks_list' do
+  describe "entry_hooks_list" do
     let(:context) { {} }
     let(:current_state) { :sleeping }
     let(:machine) { LifeOfACat.new current_state, context }
 
-    it 'returns the hooks as an array from outside-in' do
+    it "returns the hooks as an array from outside-in" do
       details = DeepState::MachineVisitor.new
       LifeOfACat.root_state_definition.visit details
 
@@ -129,16 +128,16 @@ RSpec.describe DeepState::StateDefinition do
              .entry_hooks_list.collect { |hook|
                hook.run(machine)
              }.to_a)
-      .to eq(['sit', 'lick paws', 'curl up'])
+        .to eq(["sit", "lick paws", "curl up"])
     end
   end
 
-  describe 'entry_hooks_list' do
+  describe "entry_hooks_list" do
     let(:context) { {} }
     let(:current_state) { :sleeping }
     let(:machine) { LifeOfACat.new current_state, context }
 
-    it 'returns the hooks as an array inside-out' do
+    it "returns the hooks as an array inside-out" do
       details = DeepState::MachineVisitor.new
       LifeOfACat.root_state_definition.visit details
 
@@ -146,12 +145,11 @@ RSpec.describe DeepState::StateDefinition do
              .exit_hooks_list.collect { |hook|
                hook.run(machine)
              }.to_a)
-      .to eq(['stretch', 'find hoomin', 'tail up!'])
+        .to eq(["stretch", "find hoomin", "tail up!"])
     end
   end
 
-
-  describe 'parents' do
+  describe "parents" do
     let!(:root) { DeepState::StateDefinition.new(:root) }
     let!(:one) { root.initial :one }
     let!(:one_one) { one.initial :one_one }
@@ -164,19 +162,19 @@ RSpec.describe DeepState::StateDefinition do
     subject { state.parents }
     let(:state) { two_two_one }
 
-    it 'yield the parents' do
+    it "yield the parents" do
       expect { |b| subject.each(&b) }.to yield_successive_args(two_two, two)
     end
 
-    context 'root states' do
+    context "root states" do
       let(:state) { one }
 
-      it 'does not include hidden root state' do
-        expect { |b| subject.each(&b) }.to yield_successive_args()
+      it "does not include hidden root state" do
+        expect { |b| subject.each(&b) }.to yield_successive_args
       end
     end
 
-    describe 'children' do
+    describe "children" do
       let!(:root) { DeepState::StateDefinition.new(:root) }
       let!(:one) { root.initial :one }
       let!(:one_one) { one.initial :one_one }
@@ -189,23 +187,23 @@ RSpec.describe DeepState::StateDefinition do
       subject { state.children }
       let(:state) { root }
 
-      it 'yield the initial child states' do
+      it "yield the initial child states" do
         expect { |b| subject.each(&b) }.to yield_successive_args(one, one_one)
       end
 
-      context 'substate state' do
+      context "substate state" do
         let(:state) { one }
 
-        it 'does not include hidden root state' do
+        it "does not include hidden root state" do
           expect { |b| subject.each(&b) }.to yield_successive_args(one_one)
         end
       end
 
-      context 'atomic state' do
+      context "atomic state" do
         let(:state) { one_one }
 
-        it 'does not include hidden root state' do
-          expect { |b| subject.each(&b) }.to yield_successive_args()
+        it "does not include hidden root state" do
+          expect { |b| subject.each(&b) }.to yield_successive_args
         end
       end
     end

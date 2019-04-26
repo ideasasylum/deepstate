@@ -2,7 +2,6 @@ require "ostruct"
 
 # Top-level module interface and DSL
 module DeepState
-
   def self.included(base)
     base.extend(ClassMethods)
   end
@@ -43,5 +42,4 @@ module DeepState
       instance.send(:initialize, root_state_definition, *args, &block)
     end
   end
-
 end

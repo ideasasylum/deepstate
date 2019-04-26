@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry", "~> 0.12.2"
   spec.add_development_dependency "pry-stack_explorer"
   spec.add_development_dependency "standardrb"
-  spec.add_development_dependency 'simplecov'
+  spec.add_development_dependency "simplecov"
 end

@@ -15,26 +15,25 @@ RSpec.describe DeepState::MachineVisitor do
 
   subject { root.visit visitor }
 
-  it 'collects the states' do
+  it "collects the states" do
     subject
     expect(visitor.states).to be_a(Hash)
     expect(visitor.states.length).to eq(2)
   end
 
-  it 'collects the events' do
+  it "collects the events" do
     subject
     expect(visitor.events).to be_a(Hash)
     expect(visitor.events.length).to eq(3)
   end
 
-  it 'stores the states by name' do
+  it "stores the states by name" do
     subject
     expect(visitor.states[:on_state]).to be_a(DeepState::StateDefinition)
   end
 
-  it 'stores the events by name' do
+  it "stores the events by name" do
     subject
     expect(visitor.events[:on]).to be_a(DeepState::Event)
   end
-
 end

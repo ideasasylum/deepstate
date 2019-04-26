@@ -2,16 +2,16 @@ class LifeOfACat
   include DeepState
 
   on_exit do
-    'tail up!'
+    "tail up!"
   end
 
   on_entry do
-    'sit'
+    "sit"
   end
 
   initial :hungry do
     on_entry do
-      'meow'
+      "meow"
     end
 
     event eat: :satisfied
@@ -19,20 +19,20 @@ class LifeOfACat
 
   state :satisfied do
     on_entry do
-      'lick paws'
+      "lick paws"
     end
 
     on_exit do
-      'find hoomin'
+      "find hoomin"
     end
 
     initial :curious do
       on_entry do
-        'explore'
+        "explore"
       end
 
       on_exit do
-        'knock things over'
+        "knock things over"
       end
 
       event tired: :sleeping
@@ -53,10 +53,10 @@ class LifeOfACat
   end
 
   def stretch
-    'stretch'
+    "stretch"
   end
 
   def curl_up
-    'curl up'
+    "curl up"
   end
 end

@@ -1,4 +1,4 @@
-require 'simplecov'
+require "simplecov"
 SimpleCov.start
 
 require "bundler/setup"
@@ -9,7 +9,6 @@ require "deep_state"
 # Make our examples available to tests
 examples = File.expand_path("../../examples", __FILE__)
 $LOAD_PATH.unshift(examples) unless $LOAD_PATH.include?(examples)
-
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

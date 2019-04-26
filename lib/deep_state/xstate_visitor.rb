@@ -5,7 +5,7 @@ module DeepState
     def initialize
       @states = []
       @json = {}
-      @json[:id] = 'test'
+      @json[:id] = "test"
       @json[:states] = {}
     end
 
@@ -28,7 +28,7 @@ module DeepState
 
       # Add the state
       parent_doc[:states] ||= {}
-      if !state.root?
+      unless state.root?
         parent_doc[:states][state.name.to_sym] = state_def(state)
       end
 

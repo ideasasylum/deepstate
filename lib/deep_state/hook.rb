@@ -11,7 +11,7 @@ module DeepState
       # check the conditions to see if the hook should run
     end
 
-    def run machine, event=nil, from=nil, to=nil
+    def run machine, event = nil, from = nil, to = nil
       b = @block
       # run the block in the context of the machine
       case b.arity

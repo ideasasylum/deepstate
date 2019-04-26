@@ -133,13 +133,13 @@ module DeepState
 
     def entry_hooks_list
       (on_entry_hooks + parents(include_root: true).collect { |s| s.on_entry_hooks })
-      .flatten
-      .reverse
+        .flatten
+        .reverse
     end
 
     def exit_hooks_list
       (on_exit_hooks + parents(include_root: true).collect { |s| s.on_exit_hooks })
-      .flatten
+        .flatten
     end
 
     # Iterate as a depth-first search through the states, and call visitor#visit

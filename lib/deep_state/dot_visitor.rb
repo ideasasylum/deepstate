@@ -19,7 +19,6 @@ module DeepState
       @terminal_states << state if state.terminal?
       @events.unshift(*state.events.values) if state.events.any?
 
-
       if state.parent_state
         # Close the subgraph
         while @previous_states.any? && @previous_states.last != state.parent_state
@@ -46,7 +45,7 @@ module DeepState
     end
 
     def indent s
-      (' '*(@previous_states.length+1)*2)+s
+      (" " * (@previous_states.length + 1) * 2) + s
     end
 
     def to_s
@@ -59,7 +58,7 @@ module DeepState
 
     def state_line s
       # binding.pry if s.name == :assigned
-      "#{s.name} [shape=box color=#{s.initial? ? 'green' : 'black' }];\n"
+      "#{s.name} [shape=box color=#{s.initial? ? "green" : "black"}];\n"
     end
 
     def event_line e
@@ -71,8 +70,8 @@ module DeepState
     subgraph cluster_#{s.name} {
     #{s.name}
     label=#{s.name}
-    color=#{s.initial? ? 'green' : 'black' }
-    STR
+    color=#{s.initial? ? "green" : "black"}
+      STR
     end
 
     def end_subgraph
