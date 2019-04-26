@@ -40,7 +40,9 @@ module DeepState
       event = transitions.find { |t| t.name == event_name }
       raise DeepState::Error unless event
 
+      run_exit_hooks event.name, event.from, event.to
       set_current_state fetch_state(event.to)
+      run_entry_hooks event_name, event.from, event.to
     end
 
     def transitions
@@ -69,6 +71,18 @@ module DeepState
       # Calculate the actual initial state if it's a compound state
       state = state.children.collect.to_a.last || state
       @current_state = state.name
+    end
+
+    def run_entry_hooks event, from, to
+      fetch_state(current_state).entry_hooks_list.each do |hook|
+        hook.run self, event, from, to
+      end
+    end
+
+    def run_exit_hooks event, from, to
+      fetch_state(current_state).exit_hooks_list.each do |hook|
+        hook.run self, event, from, to
+      end
     end
   end
 end

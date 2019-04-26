@@ -32,12 +32,12 @@ module DeepState
 
     # Define an on_entry event handler
     def on_entry conditions = {}, &block
-      @hooks[:on_entry] << DeepState::Hook.new(self, conditions, &block)
+      @hooks[:on_entry] << DeepState::Hook.new(conditions, &block)
     end
 
     # Define an on_entry event handler
     def on_exit conditions = {}, &block
-      @hooks[:on_exit] << DeepState::Hook.new(self, conditions, &block)
+      @hooks[:on_exit] << DeepState::Hook.new(conditions, &block)
     end
 
     def on_entry_hooks

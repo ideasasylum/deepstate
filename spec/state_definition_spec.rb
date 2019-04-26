@@ -96,10 +96,6 @@ RSpec.describe DeepState::StateDefinition do
     it "is a Hook" do
       expect(state.on_entry_hooks.first).to be_a(DeepState::Hook)
     end
-
-    it "sets the hook's state" do
-      expect(state.on_entry_hooks.first.state).to eq(state)
-    end
   end
 
   describe "#on_exit" do
@@ -118,10 +114,6 @@ RSpec.describe DeepState::StateDefinition do
     it "is a Hook" do
       expect(state.on_exit_hooks.first).to be_a(DeepState::Hook)
     end
-
-    it "sets the hook's state" do
-      expect(state.on_exit_hooks.first.state).to eq(state)
-    end
   end
 
   describe 'entry_hooks_list' do
@@ -134,8 +126,10 @@ RSpec.describe DeepState::StateDefinition do
       LifeOfACat.root_state_definition.visit details
 
       expect(details.states[current_state]
-             .entry_hooks_list.collect(&:run).to_a)
-      .to eq(['lick paws', 'curl up'])
+             .entry_hooks_list.collect { |hook|
+               hook.run(machine)
+             }.to_a)
+      .to eq(['sit', 'lick paws', 'curl up'])
     end
   end
 
@@ -144,13 +138,15 @@ RSpec.describe DeepState::StateDefinition do
     let(:current_state) { :sleeping }
     let(:machine) { LifeOfACat.new current_state, context }
 
-    it 'returns the hooks as an array inside-out', :focus do
+    it 'returns the hooks as an array inside-out' do
       details = DeepState::MachineVisitor.new
       LifeOfACat.root_state_definition.visit details
 
       expect(details.states[current_state]
-             .exit_hooks_list.collect(&:run).to_a)
-      .to eq(['stretch', 'find hoomin'])
+             .exit_hooks_list.collect { |hook|
+               hook.run(machine)
+             }.to_a)
+      .to eq(['stretch', 'find hoomin', 'tail up!'])
     end
   end
 

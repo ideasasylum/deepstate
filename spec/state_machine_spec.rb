@@ -91,6 +91,19 @@ RSpec.describe DeepState::StateMachine do
         expect { machine.transition(:wake)}.to change(machine, :current_state).to(:sleepy)
       end
     end
+
+    context 'call the entry hooks' do
+      let(:context) { {} }
+      let(:current_state) { :sleeping }
+      let(:machine) { LifeOfACat.new current_state, context }
+
+      subject { machine.transition :wake }
+
+      it 'run' do
+        expect(machine).to receive(:stretch).once
+        subject
+      end
+    end
   end
 
 end
