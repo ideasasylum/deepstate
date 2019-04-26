@@ -1,3 +1,5 @@
+require 'life_of_a_cat'
+
 RSpec.describe DeepState::StateDefinition do
   describe "#initial_state" do
     let(:root) { DeepState::StateDefinition.new "root", nil }
@@ -121,6 +123,37 @@ RSpec.describe DeepState::StateDefinition do
       expect(state.on_exit_hooks.first.state).to eq(state)
     end
   end
+
+  describe 'entry_hooks_list' do
+    let(:context) { {} }
+    let(:current_state) { :sleeping }
+    let(:machine) { LifeOfACat.new current_state, context }
+
+    it 'returns the hooks as an array from outside-in' do
+      details = DeepState::MachineVisitor.new
+      LifeOfACat.root_state_definition.visit details
+
+      expect(details.states[current_state]
+             .entry_hooks_list.collect(&:run).to_a)
+      .to eq(['lick paws', 'curl up'])
+    end
+  end
+
+  describe 'entry_hooks_list' do
+    let(:context) { {} }
+    let(:current_state) { :sleeping }
+    let(:machine) { LifeOfACat.new current_state, context }
+
+    it 'returns the hooks as an array inside-out', :focus do
+      details = DeepState::MachineVisitor.new
+      LifeOfACat.root_state_definition.visit details
+
+      expect(details.states[current_state]
+             .exit_hooks_list.collect(&:run).to_a)
+      .to eq(['stretch', 'find hoomin'])
+    end
+  end
+
 
   describe 'parents' do
     let!(:root) { DeepState::StateDefinition.new(:root) }

@@ -14,7 +14,7 @@ module DeepState
 
     def run
       # run the block in the context of the state
-
+      @block.call
     end
   end
 end

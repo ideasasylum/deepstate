@@ -131,12 +131,14 @@ module DeepState
       validator.validate
     end
 
-    def entry_hooks
-      children.flat_map { |s| s.on_entry_hooks }
+    def entry_hooks_list
+      (on_entry_hooks + parents.collect { |s| s.on_entry_hooks })
+      .flatten
+      .reverse
     end
 
-    def exit_hooks
-      parents.flat_map { |s| s.on_exit_hooks }
+    def exit_hooks_list
+      (on_exit_hooks + parents.collect { |s| s.on_exit_hooks }).flatten
     end
 
     # Iterate as a depth-first search through the states, and call visitor#visit
