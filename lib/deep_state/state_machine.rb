@@ -1,11 +1,11 @@
 module DeepState
   module StateMachine
-    attr_reader :current_state
+    attr_reader :current_state, :context
 
     # Create an instance of this state machine with a given context
     def initialize root_definition, current_state_name=nil, context={}
       @root = root_definition
-      @context = context
+      @context = DeepState::Context.new self, context
 
       @details = DeepState::MachineVisitor.new
       @root.visit @details

@@ -1,6 +1,14 @@
 class LifeOfACat
   include DeepState
 
+  on_exit do
+    'tail up!'
+  end
+
+  on_entry do
+    'sit'
+  end
+
   initial :hungry do
     on_entry do
       'meow'
@@ -33,14 +41,22 @@ class LifeOfACat
 
     state :sleeping do
       on_entry do
-        'curl up'
+        curl_up
       end
 
       on_exit do
-        'stretch'
+        stretch
       end
 
       event wake: :hungry
     end
+  end
+
+  def stretch
+    'stretch'
+  end
+
+  def curl_up
+    'curl up'
   end
 end

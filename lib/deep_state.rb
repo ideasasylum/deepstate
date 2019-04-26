@@ -6,6 +6,7 @@ require "deep_state/state_definition"
 require "deep_state/hook"
 require "deep_state/event"
 require "deep_state/state_machine"
+require "deep_state/context"
 require "deep_state/module"
 
 
