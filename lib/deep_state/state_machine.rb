@@ -12,6 +12,9 @@ module DeepState
 
       validate
 
+      define_state_methods
+      define_can_transition_methods
+
       # Default to the initial state
       first_state = fetch_state(current_state_name)
       first_state ||= @root
@@ -22,7 +25,8 @@ module DeepState
       @root.validate
     end
 
-    def current_state=state_name
+    # Sets the current state without performing a transition
+    def restore! state_name
       update_current_state fetch_state(state_name)
     end
 
@@ -54,6 +58,23 @@ module DeepState
     def is? state_name
       current_states.any? { |s| s.name == state_name }
     end
+
+    def define_can_transition_methods
+      @details.events.each do |name, state|
+        define_singleton_method("can_#{name}?") do
+          can?(name.to_sym)
+        end
+      end
+    end
+
+    def define_state_methods
+      @details.states.each do |name, state|
+        define_singleton_method("#{name}?") do
+          is?(name.to_sym)
+        end
+      end
+    end
+
 
     private
 

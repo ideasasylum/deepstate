@@ -10,6 +10,16 @@ RSpec.describe DeepState::StateMachine do
     it "sets the current state" do
       expect(machine.current_state).to eq(current_state)
     end
+
+    it 'defines the state methods' do
+      expect(machine).to receive(:is?).with(:sleeping)
+      machine.sleeping?
+    end
+
+    it 'defines the transition methods' do
+      expect(machine).to receive(:can?).with(:wake)
+      machine.can_wake?
+    end
   end
 
   describe "transitions" do
