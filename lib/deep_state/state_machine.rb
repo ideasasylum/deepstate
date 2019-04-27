@@ -13,6 +13,7 @@ module DeepState
       validate
 
       define_state_methods
+      define_transition_methods
       define_can_transition_methods
 
       # Default to the initial state
@@ -57,6 +58,14 @@ module DeepState
 
     def is? state_name
       current_states.any? { |s| s.name == state_name }
+    end
+
+    def define_transition_methods
+      @details.events.each do |name, state|
+        define_singleton_method("#{name}!") do
+          transition(name.to_sym)
+        end
+      end
     end
 
     def define_can_transition_methods

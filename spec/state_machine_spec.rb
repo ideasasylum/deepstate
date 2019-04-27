@@ -20,6 +20,11 @@ RSpec.describe DeepState::StateMachine do
       expect(machine).to receive(:can?).with(:wake)
       machine.can_wake?
     end
+
+    it 'defines the transition methods' do
+      expect(machine).to receive(:transition).with(:wake)
+      machine.wake!
+    end
   end
 
   describe "transitions" do
