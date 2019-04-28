@@ -1,0 +1,32 @@
+digraph test {
+      subgraph cluster_open {
+    open
+    label=open
+    color=green
+    open -> waiting [label=start]
+    open -> assigned [label=assign]
+    open -> open [label=alert]
+    waiting [shape=box color=black];
+    waiting -> waking [label=wake]
+        subgraph cluster_waking {
+    waking
+    label=waking
+    color=black
+      phoning [shape=box color=green];
+      phoning -> phoning [label=retry]
+      phoning -> cancelled [label=fail]
+      phoning -> answered [label=answer]
+      waiting [shape=box color=black];
+      waiting -> phoning [label=phone]
+      failed [shape=box color=black];
+      failed -> cancelled [label=cancel]
+      failed -> phoning [label=retry]
+      cancelled [shape=box color=black];
+      answered [shape=box color=black];
+    }
+  }
+  assigned [shape=box color=black];
+  assigned -> assigned [label=alert]
+  assigned -> closed [label=close]
+  closed [shape=box color=black];
+}

@@ -1,0 +1,3 @@
+const machine = Machine(
+{"id":"test","states":{"open":{"states":{"starting":{"on":{"start":"waiting"}},"waiting":{"on":{"wake":"waking"}},"waking":{"states":{"phoning":{"on":{"retry":"phoning","fail":"cancelled","answer":"answered"}},"waiting":{"on":{"phone":"phoning"}},"failed":{"on":{"cancel":"cancelled","retry":"phoning"}},"cancelled":{},"answered":{}},"initial":"phoning"}},"on":{"assign":"assigned","alert":"open"},"initial":"starting"},"assigned":{"on":{"alert":"assigned","close":"closed"}},"closed":{}},"initial":"open"}
+);

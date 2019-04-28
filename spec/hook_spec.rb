@@ -13,7 +13,7 @@ RSpec.describe DeepState::Hook do
       context "with no parameters" do
         let(:block) { -> { context.test_key } }
 
-        it "can access the context object", :focus do
+        it "can access the context object" do
           expect(subject).to eq(:success)
         end
       end
@@ -21,7 +21,7 @@ RSpec.describe DeepState::Hook do
       context "with no parameters" do
         let(:block) { -> { :success } }
 
-        it "executes the block", :focus do
+        it "executes the block" do
           expect(subject).to eq(:success)
         end
       end
@@ -29,7 +29,7 @@ RSpec.describe DeepState::Hook do
       context "with event parameter" do
         let(:block) { ->(event) { [event] } }
 
-        it "executes the block", :focus do
+        it "executes the block" do
           expect(subject).to eq([:wake])
         end
       end
@@ -37,7 +37,7 @@ RSpec.describe DeepState::Hook do
       context "with event and from parameters" do
         let(:block) { ->(event, from) { [event, from] } }
 
-        it "executes the block", :focus do
+        it "executes the block" do
           expect(subject).to eq([:wake, :sleeping])
         end
       end
@@ -45,7 +45,7 @@ RSpec.describe DeepState::Hook do
       context "with event, from, and to parameters" do
         let(:block) { ->(event, from, to) { [event, from, to] } }
 
-        it "executes the block", :focus do
+        it "executes the block" do
           expect(subject).to eq([:wake, :sleeping, :hungry])
         end
       end

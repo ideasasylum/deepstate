@@ -60,6 +60,13 @@ module DeepState
       current_states.any? { |s| s.name == state_name }
     end
 
+    # Fetch the names of all sub-states of a given state
+    # Primarily used by the dynamic scopes to find models in a state (or any sub-state)
+    def search_state_filter state_name
+      state = fetch_state(state_name)
+      state.substates.collect &:name
+    end
+
     def define_transition_methods
       @details.events.each do |name, state|
         define_singleton_method("#{name}!") do

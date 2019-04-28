@@ -86,6 +86,12 @@ RSpec.describe DeepState::StateMachine do
     end
   end
 
+  describe "state_search" do
+    it 'gives the child states' do
+      expect(machine.search_state_filter(:sleeping)).to match_array([:dreaming, :rem, :sleeping])
+    end
+  end
+
   describe "transition" do
     context "atomic state" do
       let(:current_state) { :dead }

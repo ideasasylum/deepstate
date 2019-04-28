@@ -113,6 +113,7 @@ module DeepState
       end
     end
 
+    # TODO: rename this to initial_path?
     def children
       Enumerator.new do |yielder|
         # Walk down the initial states
@@ -122,6 +123,13 @@ module DeepState
           s = s.initial_state
         end
       end
+    end
+
+    # All substates including self
+    def substates
+      visitor = DeepState::MachineVisitor.new
+      visit visitor
+      visitor.states.values
     end
 
     def validate
