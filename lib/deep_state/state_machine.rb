@@ -43,6 +43,8 @@ module DeepState
       event = transitions.find { |t| t.name == event_name }
       raise DeepState::Error unless event
 
+      return unless event.run?(context)
+
       run_exit_hooks event.name, event.from, event.to
       update_current_state fetch_state(event.to)
       run_entry_hooks event_name, event.from, event.to
