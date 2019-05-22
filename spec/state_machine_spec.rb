@@ -1,5 +1,18 @@
 require "sleeping"
 require "life_of_a_cat"
+require 'benchmark'
+
+RSpec::Matchers.define :be_delayed_by do |minimum_time|
+  match do |actual|
+    elapsed_time = Benchmark.measure do
+      actual.call
+    end
+
+    elapsed_time.real > minimum_time
+  end
+
+  supports_block_expectations
+end
 
 RSpec.describe DeepState::StateMachine do
   let(:context) { {} }
@@ -125,5 +138,18 @@ RSpec.describe DeepState::StateMachine do
         subject
       end
     end
+
+    context "with a delayed transition", :focus do
+      let(:context) { {} }
+      let(:current_state) { :sleeping }
+      let(:machine) { LifeOfACat.new current_state, context }
+
+      subject { machine.transition :wake }
+
+      it "run" do
+        expect { subject }.to be_delayed_by(1)
+      end
+    end
+
   end
 end

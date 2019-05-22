@@ -21,6 +21,14 @@ module DeepState
       check_condition(unless_condition, context)
     end
 
+    def delay
+      conditions['in'] || conditions[:in]
+    end
+
+    def delayed?
+      !delay.nil?
+    end
+
     def run
       # run the block in the context of the state
     end
@@ -31,6 +39,7 @@ module DeepState
       return true if condition.nil?
 
       # run the block in the context of the machine
+      # but handle different variation of argument blocks
       result = case condition.arity
       when 0 then context.instance_exec(&condition)
       when 1 then context.instance_exec(name, &condition)

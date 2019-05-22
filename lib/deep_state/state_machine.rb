@@ -1,3 +1,5 @@
+require "deep_state/delayed/sleep/adapter"
+
 module DeepState
   module StateMachine
     attr_reader :current_state, :context
@@ -45,9 +47,17 @@ module DeepState
 
       return unless event.run?(context)
 
+      if event.delayed?
+        delay_transition event
+      else
+        execute_transition event
+      end
+    end
+
+    def execute_transition event
       run_exit_hooks event.name, event.from, event.to
       update_current_state fetch_state(event.to)
-      run_entry_hooks event_name, event.from, event.to
+      run_entry_hooks event.name, event.from, event.to
     end
 
     def transitions
@@ -120,6 +130,16 @@ module DeepState
       fetch_state(current_state).exit_hooks_list.each do |hook|
         hook.run self, event, from, to
       end
+    end
+
+    def delay_transition event
+      # get the delayed adapter
+      # tell it to delay the event
+      delay_adapter.call self, event
+    end
+
+    def delay_adapter
+      DeepState::Delayed::Sleep::Adapter
     end
   end
 end
