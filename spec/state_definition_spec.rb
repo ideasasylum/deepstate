@@ -30,7 +30,7 @@ RSpec.describe DeepState::StateDefinition do
 
     context "with a block definition" do
       let!(:event) do
-        initial_state.event resume: :active
+        initial_state.event :resume, :active
       end
 
       let!(:nested_state) do
@@ -214,12 +214,12 @@ RSpec.describe DeepState::StateDefinition do
       let(:root) { DeepState::StateDefinition.new "root", nil }
       let!(:initial_state) do
         root.initial :waiting do
-          event resume: :active
+          event :resume, :active
         end
       end
 
       let!(:event) do
-        root.event stop: :finished
+        root.event :stop, :finished
       end
 
       let(:visitor) { DeepState::ValidationVisitor.new }

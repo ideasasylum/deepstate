@@ -6,8 +6,8 @@ RSpec.describe DeepState::ValidationVisitor do
       let(:state) { DeepState::StateDefinition.new "root", nil }
 
       before(:each) do
-        state.event wait: :waiting
-        state.event stop: :stopped
+        state.event :wait, :waiting
+        state.event :stop, :stopped
       end
 
       it "stores the states and events" do
@@ -61,13 +61,13 @@ RSpec.describe DeepState::ValidationVisitor do
     context "with duplicate events" do
       let(:first_state) do
         DeepState::StateDefinition.new(:first).tap do |s|
-          s.event next: :second_state
+          s.event :next, :second_state
         end
       end
 
       let(:second_state) do
         DeepState::StateDefinition.new(:second).tap do |s|
-          s.event next: :first_state
+          s.event :next, :first_state
         end
       end
 

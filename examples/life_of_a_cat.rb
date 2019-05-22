@@ -14,7 +14,7 @@ class LifeOfACat
       "meow"
     end
 
-    event eat: :satisfied
+    event :eat, :satisfied
   end
 
   state :satisfied do
@@ -35,8 +35,8 @@ class LifeOfACat
         "knock things over"
       end
 
-      event tired: :sleeping
-      event bored: :sleeping
+      event :tired, :sleeping
+      event :bored, :sleeping
     end
 
     state :sleeping do
@@ -48,7 +48,7 @@ class LifeOfACat
         stretch
       end
 
-      event wake: :hungry
+      event :wake, :hungry, in: 1
     end
   end
 

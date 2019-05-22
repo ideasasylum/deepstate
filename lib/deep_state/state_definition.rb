@@ -57,9 +57,7 @@ module DeepState
     end
 
     # Create a transition between states
-    def event transition, conditions = {}, &block
-      name = transition.keys.first
-      destination = transition.values.first
+    def event name, destination, conditions = {}, &block
       e = DeepState::Event.new name, self.name, destination, conditions
       e.instance_eval(&block) if block_given?
       @events[name.to_sym] = e

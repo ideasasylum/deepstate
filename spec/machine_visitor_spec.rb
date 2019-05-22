@@ -4,11 +4,11 @@ RSpec.describe DeepState::MachineVisitor do
   let(:root) do
     DeepState::StateDefinition.new(:root).tap do |s|
       s.initial :on_state do
-        event off: :off_state
+        event :off, :off_state
       end
       s.state :off_state do
-        event on: :on_state
-        event off_again: :off
+        event :on, :on_state
+        event :off_again, :off
       end
     end
   end
