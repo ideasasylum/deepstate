@@ -2,7 +2,7 @@ require "deep_state/delayed/sleep/adapter"
 
 module DeepState
   module StateMachine
-    attr_reader :current_state, :context
+    attr_reader :current_state, :context, :updated_at
 
     # Create an instance of this state machine with a given context
     def initialize root_definition, current_state_name = nil, context = {}
@@ -29,7 +29,7 @@ module DeepState
     end
 
     # Sets the current state without performing a transition
-    def restore! state_name
+    def restore! state_name, updated_at=Time.now
       update_current_state fetch_state(state_name)
     end
 
@@ -118,6 +118,7 @@ module DeepState
       # Calculate the actual initial state if it's a compound state
       state = state.children.collect.to_a.last || state
       @current_state = state.name
+      @updated_at = Time.now
     end
 
     def run_entry_hooks event, from, to

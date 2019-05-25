@@ -113,6 +113,11 @@ RSpec.describe DeepState::StateMachine do
         expect { machine.transition(:restart) }.to change(machine, :current_state).from(:dead).to(:sleepy)
       end
 
+      it "changes the updated_at timestamp" do
+        machine.restore! current_state, DateTime.now-7
+        expect { machine.transition(:restart) }.to change(machine, :updated_at)
+      end
+
       it "to an invalid state" do
         expect { machine.transition(:wake) }.to raise_error(DeepState::Error)
       end
@@ -139,7 +144,7 @@ RSpec.describe DeepState::StateMachine do
       end
     end
 
-    context "with a delayed transition", :focus do
+    context "with a delayed transition" do
       let(:context) { {} }
       let(:current_state) { :sleeping }
       let(:machine) { LifeOfACat.new current_state, context }
