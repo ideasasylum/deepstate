@@ -39,12 +39,25 @@ RSpec.describe DeepState::ValidationVisitor do
     context "with duplicate states" do
       let(:states) { [state1, state1, state2] }
 
-      it "raises DeepState::Error" do
-        expect {subject}.to raise_error(DeepState::Error)
+      it "raises DeepState::DuplicateStateError" do
+        expect {subject}.to raise_error(DeepState::DuplicateStateError)
+                            .with_message("Duplicate states [:state1, :state1]")
       end
     end
 
-    context "with duplicate states" do
+    context "with duplicate initial states" do
+      let(:state1) { DeepState::StateDefinition.new :state1, nil, type: :initial }
+      let(:state2) { DeepState::StateDefinition.new :state2, nil, type: :initial }
+      let(:states) { [state1, state2, state3] }
+
+      it "raises DeepState::DuplicateInitialStateError" do
+        expect {subject}.to raise_error(DeepState::DuplicateInitialStateError)
+                            .with_message("Duplicate initial states: [:state1, :state2]")
+      end
+
+    end
+
+    context "with missing initial states" do
       let(:compound_state) do
         DeepState::StateDefinition.new(:first).tap do |s|
           s.state :nested_state
@@ -53,8 +66,8 @@ RSpec.describe DeepState::ValidationVisitor do
 
       let(:states) { [compound_state] }
 
-      it "raises DeepState::Error" do
-        expect {subject}.to raise_error(DeepState::Error)
+      it "raises DeepState::MissingInitialStateError" do
+        expect {subject}.to raise_error(DeepState::MissingInitialStateError)
       end
     end
 
@@ -73,14 +86,10 @@ RSpec.describe DeepState::ValidationVisitor do
 
       let(:states) { [first_state, second_state] }
 
-      it "raises DeepState::Error" do
-        expect {subject}.to raise_error(DeepState::Error)
+      it "raises DeepState::DuplicateEventError" do
+        expect {subject}.to raise_error(DeepState::DuplicateEventError)
+                            .with_message("Duplicate events [:next, :next]")
       end
     end
   end
-
-  # it "validates the example" do
-  #   root_state = DeepState::Example.root_state_definition
-  #   root_state.validate
-  # end
 end

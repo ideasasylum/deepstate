@@ -155,6 +155,10 @@ module DeepState
       visitor
     end
 
+    def to_s
+      name
+    end
+
     def to_dot
       visit DeepState::DotVisitor.new
     end

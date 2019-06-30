@@ -25,36 +25,64 @@ module DeepState
     end
 
     def validate
-      raise DeepState::Error, "Duplicate state names" if duplicate_state_names?
-      raise DeepState::Error, "Duplicate event names" if duplicate_event_names?
-      raise DeepState::Error, "Missing initial state" if compound_state_without_initial_state?
-      raise DeepState::Error, "Duplicate initial states" if more_than_one_initial_state?
+      check_state_names
+      check_event_names
+      check_initial_state_exists
+      check_initial_states
 
       true
     end
 
-    def compound_state_without_initial_state?
-      @states.any? { |state|
+    def check_state_names
+      names = duplicate_state_names
+      return if names.empty?
+      raise DeepState::DuplicateStateError.new(names)
+    end
+
+    def check_event_names
+      events = duplicate_events
+      return if events.empty?
+
+      raise DeepState::DuplicateEventError.new(events)
+    end
+
+    def check_initial_state_exists
+      states = compound_state_without_initial_state
+      return if states.empty?
+
+      raise DeepState::MissingInitialStateError.new(states)
+    end
+
+    def check_initial_states
+      states = states_with_than_one_initial_state
+      return if states.empty?
+
+      raise DeepState::DuplicateInitialStateError.new(states)
+    end
+
+
+    def compound_state_without_initial_state
+      @states.select { |state|
         state.compound_state? && state.initial_state.nil?
       }
     end
 
-    def duplicate_state_names?
-      states_by_name.any? { |name, states|
+    def duplicate_state_names
+      states_by_name.select { |name, states|
         states.length > 1
-      }
+      }.values.flatten
     end
 
-    def duplicate_event_names?
-      events_by_name.any? { |name, events|
+    def duplicate_events
+      events_by_name.select { |name, events|
         events.length > 1
-      }
+      }.values.flatten
     end
 
-    def more_than_one_initial_state?
-      initial_states_by_parent_state.any? {|parent, initial_states|
+    def states_with_than_one_initial_state
+      initial_states_by_parent_state.select { |parent, initial_states|
         initial_states.length > 1
-      }
+      }.values.flatten
     end
 
     def initial_states_by_parent_state

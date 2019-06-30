@@ -33,6 +33,10 @@ module DeepState
       # run the block in the context of the state
     end
 
+    def to_s
+      name
+    end
+
     private
 
     def check_condition condition, context
