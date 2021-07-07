@@ -27,7 +27,7 @@ GEM
       pry (>= 0.9.11)
     psych (3.1.0)
     rainbow (3.0.0)
-    rake (12.3.2)
+    rake (13.0.4)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -69,7 +69,7 @@ DEPENDENCIES
   deepstate!
   pry (~> 0.12.2)
   pry-stack_explorer
-  rake (~> 12.3)
+  rake (~> 13.0)
   rspec (~> 3.0)
   simplecov
   standardrb
